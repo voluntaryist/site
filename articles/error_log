@@ -1,0 +1,6 @@
+[22-Sep-2012 13:18:03] PHP Parse error:  syntax error, unexpected '<' in /home/nhunderg/public_html/voluntaryist/articles/100.html on line 37
+[22-Sep-2012 13:18:52] PHP Warning:  include(leftmenu.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/articles/100.html on line 36
+[22-Sep-2012 13:18:52] PHP Warning:  include(leftmenu.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/articles/100.html on line 36
+[22-Sep-2012 13:18:52] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'leftmenu.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nhunderg/public_html/voluntaryist/articles/100.html on line 36
+[22-Sep-2012 13:30:32] PHP Parse error:  syntax error, unexpected '<' in /home/nhunderg/public_html/voluntaryist/articles/082a.html on line 37
+[20-Oct-2012 22:44:49] PHP Warning:  preg_replace() [<a href='function.preg-replace'>function.preg-replace</a>]: No ending matching delimiter '&gt;' found in /home/nhunderg/public_html/voluntaryist/newlay.php on line 55

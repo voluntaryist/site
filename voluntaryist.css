@@ -1,0 +1,20 @@
+body {
+    color: black; 
+    font-family: arial, helvetica, verdana; 
+    background-color: #8899AA;
+}
+a:link{color: #C60000}
+a:active {color: #000000}
+a:visited {color: #666666}
+.header:visited {color: #C60000}
+a:hover{font-weight:bold}
+
+.addthis_toolbox {
+    position: absolute;
+    right: 10px;
+    top: 106px;
+}
+
+body>div{
+    width: 1000px;
+}

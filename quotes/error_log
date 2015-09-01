@@ -1,0 +1,6 @@
+[08-Apr-2013 10:43:13 US/Central] PHP Warning:  include(..quotelist.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/newlay.php(139) : eval()'d code on line 85
+[08-Apr-2013 10:43:13 US/Central] PHP Warning:  include(..quotelist.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/newlay.php(139) : eval()'d code on line 85
+[08-Apr-2013 10:43:13 US/Central] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '..quotelist.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nhunderg/public_html/voluntaryist/newlay.php(139) : eval()'d code on line 85
+[08-Apr-2013 10:43:13 US/Central] PHP Warning:  Invalid argument supplied for foreach() in /home/nhunderg/public_html/voluntaryist/newlay.php(139) : eval()'d code on line 86
+[24-Apr-2013 12:06:35 US/Central] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/nhunderg/public_html/voluntaryist/quotelist.php on line 204
+[24-Apr-2013 12:07:10 US/Central] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/nhunderg/public_html/voluntaryist/quotelist.php on line 205

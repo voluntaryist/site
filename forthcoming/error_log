@@ -1,0 +1,82 @@
+[05-Oct-2012 19:24:11] PHP Warning:  include(scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:11] PHP Warning:  include(scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:11] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'scripts/curl.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:11] PHP Fatal error:  Call to undefined function  curlget() in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 72
+[05-Oct-2012 19:24:28] PHP Warning:  include(scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:28] PHP Warning:  include(scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:28] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'scripts/curl.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 70
+[05-Oct-2012 19:24:28] PHP Fatal error:  Call to undefined function  curlget() in /home/nhunderg/public_html/voluntaryist/forthcoming/farewelltomurder.html on line 72
+[04-Nov-2012 17:10:07] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/newlay.php(62) : eval()'d code on line 94
+[04-Nov-2012 17:11:45] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/newlay.php(62) : eval()'d code on line 94
+[09-Nov-2012 18:15:22] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/newlay.php(62) : eval()'d code on line 94
+[09-Nov-2012 18:15:23] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/newlay.php(62) : eval()'d code on line 73
+[09-Nov-2012 18:15:23] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/newlay.php(62) : eval()'d code on line 85
+[02-Jan-2013 02:34:47] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[02-Jan-2013 05:53:20] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[02-Jan-2013 06:06:20] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[02-Jan-2013 23:27:21] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[03-Jan-2013 02:06:47] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[03-Jan-2013 04:49:12] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[03-Jan-2013 16:21:10] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[03-Jan-2013 17:16:50] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[04-Jan-2013 01:16:18] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[04-Jan-2013 12:22:49] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[04-Jan-2013 12:23:35] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[04-Jan-2013 22:05:36] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 08:28:27] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 15:02:25] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 16:00:03] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 16:02:05] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 17:04:18] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 18:32:46] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 18:37:30] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 18:39:04] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 20:45:28] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 22:54:04] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 23:39:47] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 23:41:30] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[05-Jan-2013 23:41:38] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[06-Jan-2013 01:08:11] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[06-Jan-2013 14:25:14] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[06-Jan-2013 22:14:23] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[06-Jan-2013 23:54:23] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[07-Jan-2013 19:55:13] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[07-Jan-2013 19:57:33] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[07-Jan-2013 20:19:06] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[07-Jan-2013 22:51:11] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[08-Jan-2013 03:42:17] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[08-Jan-2013 12:40:16] PHP Fatal error:  Cannot redeclare curlget() (previously declared in /home/nhunderg/public_html/voluntaryist/scripts/curl.php:2) in /home/nhunderg/public_html/voluntaryist/scripts/curl.php on line 25
+[03-Feb-2013 20:39:53] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[03-Feb-2013 20:42:24] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[04-Feb-2013 02:46:31] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[04-Feb-2013 06:19:06] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[10-Feb-2013 16:31:03] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[06-Mar-2013 21:05:20] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[06-Mar-2013 21:08:51] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[06-Mar-2013 21:09:09] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[06-Mar-2013 22:10:17] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[07-Mar-2013 02:16:11] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[03-Apr-2013 04:43:50 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[03-Apr-2013 04:43:50 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[04-Apr-2013 15:18:44 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[04-Apr-2013 15:18:44 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[08-Apr-2013 10:54:17 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[08-Apr-2013 10:54:17 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[13-Apr-2013 17:27:58 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[13-Apr-2013 17:27:58 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[17-Apr-2013 23:25:25 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[17-Apr-2013 23:25:25 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[19-Apr-2013 03:02:35 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[19-Apr-2013 03:02:35 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[20-Apr-2013 10:31:43 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[20-Apr-2013 10:31:43 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[26-Apr-2013 23:14:10 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 31
+[26-Apr-2013 23:14:10 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 37
+[15-Jun-2013 07:18:15 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 56
+[15-Jun-2013 07:18:15 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 62
+[24-Jun-2013 19:17:45 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 56
+[24-Jun-2013 19:17:45 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 62
+[24-Jun-2013 19:24:57 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 56
+[24-Jun-2013 19:24:57 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 62
+[24-Jun-2013 19:52:38 US/Central] PHP Warning:  get_object_vars() expects parameter 1 to be object, null given in /home/nhunderg/public_html/voluntaryist/funcs.php on line 56
+[24-Jun-2013 19:52:38 US/Central] PHP Warning:  Division by zero in /home/nhunderg/public_html/voluntaryist/funcs.php on line 62

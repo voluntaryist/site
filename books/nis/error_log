@@ -1,0 +1,4 @@
+[05-Oct-2012 19:09:59] PHP Warning:  include(../scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/books/nis/index-2.html on line 130
+[05-Oct-2012 19:09:59] PHP Warning:  include(../scripts/curl.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/nhunderg/public_html/voluntaryist/books/nis/index-2.html on line 130
+[05-Oct-2012 19:09:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../scripts/curl.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nhunderg/public_html/voluntaryist/books/nis/index-2.html on line 130
+[05-Oct-2012 19:09:59] PHP Fatal error:  Call to undefined function  curlget() in /home/nhunderg/public_html/voluntaryist/books/nis/index-2.html on line 132

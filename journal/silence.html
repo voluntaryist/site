@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<!-- Mirrored from www.voluntaryist.com/journal/yeareready.php by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 15 Oct 2010 17:17:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" href="../voluntaryist.css" type="text/css">
+</head><body>
+<div style="position:absolute;left:0;top:0">
+<table align="center" width="100%" height="100%">
+<tr width="100%">
+<td valign="top"><a href="http://soon.php/" target="_blank">
+<img src="http://www.voluntaryist.com/imgs/free1.jpg" border="0" alt="Free Your Mind">
+</a></td>
+<td valign="top" align="left">
+<a href="http://" target="_blank">
+<img src="http://www.voluntaryist.com/imgs/logo1.jpg" alt="voluntaryist.com" border="0">
+</a>
+</td>
+</tr>
+
+
+<tr>
+
+
+
+<td valign="top" width="150">
+    <?php include(getenv("DOCUMENT_ROOT")."/leftmenu.php"); ?>
+</td>
+
+
+
+<td valign="top">
+<center>
+<table height="300" width="100%" style="border-width:1px;border-style:solid;border-color:#C60000;background-color:#FFFFFF">
+<tr>
+    <td height="100%" valign="top" style="margin-left:10px;margin-right:10px">
+    <div style="margin:15px">
+
+<center>
+<h2>Your Document for the Use of Silence</h2>
+<h4>by Carl Watner<br>[Originally published in Boulder City, NV: Black and White Publishing Company, 1984]</h4>
+</center>
+<div class='nav'>
+    Scan: <input type='text' id='pageIn' size='2'/>
+        <span id='prev'>Previous</span> | <span id='next'>Next</span></div><br/>
+<img id='page' src='scans/silnce01.jpg' height='750'/><br/>
+<img class='e' src='scans/silnce02.jpg'/>
+<img class='e' src='scans/silnce03.jpg'/>
+<img class='e' src='scans/silnce04.jpg'/>
+<img class='e' src='scans/silnce05.jpg'/>
+<img class='e' src='scans/silnce06.jpg'/>
+<img class='e' src='scans/silnce07.jpg'/>
+<img class='e' src='scans/silnce08.jpg'/>
+<img class='e' src='scans/silnce09.jpg'/>
+<img class='e' src='scans/silnce10.jpg'/>
+<img class='e' src='scans/silnce11.jpg'/>
+<img class='e' src='scans/silnce12.jpg'/>
+<img class='e' src='scans/silnce13.jpg'/>
+<img class='e' src='scans/silnce14.jpg'/>
+<img class='e' src='scans/silnce15.jpg'/>
+<img class='e' src='scans/silnce16.jpg'/>
+<script type='text/javascript'>
+var page = 1;
+function showPage(p)
+{
+    if(p >= 1 && p < 24)
+    {
+        $('img#page').attr('src','scans/silnce'+(""+(100+p)).substr(-2)+".jpg");
+        page = p;
+    }
+}
+$(function(){
+    $('#pageIn').change(function()
+    {
+        showPage($('#pageIn').val());
+    });
+    $('#next').click(function()
+    {
+        if(page < 24)
+        {
+            showPage(page+1);
+        }
+    });
+    $('#prev').click(function()
+    {
+        if(page > 1)
+        {
+            showPage(page-1);
+        }
+    });
+    $('.e').hide();
+    $('.nav span').css('cursor','pointer');
+});
+</script>
+    </div></td>
+</tr></table></td></tr></table></div>
+</body></html>
