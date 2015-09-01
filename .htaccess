@@ -1,0 +1,24 @@
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+AddType application/x-httpd-php5 .html .php .htm
+AddHandler application/x-httpd-php5 .html .php .htm
+
+deny from 180.76.
+deny from 213.186.
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=307]
+
+RewriteRule ^(.*)\.[0-9]+\.(css|js)$ $1.$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !newlay.php
+RewriteCond %{REQUEST_FILENAME} htm.?$
+RewriteCond %{REQUEST_FILENAME} -f 
+RewriteRule ^(.*/)?([^/]*)$ /newlay.php?file=%{REQUEST_FILENAME}&%{QUERY_STRING} [L]
+
+DirectoryIndex index.html
