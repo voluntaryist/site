@@ -42,7 +42,6 @@
             <a href="/toc.html" class=header>Table of Contents &amp; Archives</a><br />
             <a href="/subscribe.html" class=header>Subscriptions &amp; Backissues</a><br />
             <a href="/contact.html" class=header>Contact</a><br />
-            <a href="/emailgroup/index.html" class=header>To the Email Group</a><br />
             <a href="/links.html" class=header>Links</a><br />
             <a href="/books/index.html" class=header>Books for Sale</a><br />
             <a href="/journal/index.html" class=header>Journal of Libertarian Studies</a><br />
