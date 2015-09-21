@@ -1,7 +1,7 @@
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
 <a class="at300b" title="Contribute on GitHub" href="https://github.com/voluntaryist/site">
-  <img style="height:16px;" src="imgs/GitHub-Mark-32px.png" alt="Contribute on GitHub"></a>
+  <img style="height:16px;" src="/imgs/GitHub-Mark-32px.png" alt="Contribute on GitHub"></a>
 <a class="addthis_button_preferred_1"></a>
 <a class="addthis_button_preferred_2"></a>
 <a class="addthis_button_preferred_3"></a>
