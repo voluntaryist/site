@@ -30,13 +30,20 @@
     $listed = 0;
     foreach($byTime as $f)
     {
-        $file = fopen($f[1], 'r');
+        $fn = $f[1];
+        $file = fopen($fn, 'r');
         $isMinor = fread($file, 14);
         fclose($file);
         if($isMinor != '<!-- minor -->')
         {
             $f = preg_replace("/Good Government: Hope or Illusion.|Does Government protection Protect./","$0 by Robert LeFevre", $f[0]);
-            echo "<li>$f</li>\n";
+            if(false === stristr($f,'by'))
+            {
+                $data = file_get_contents($fn);
+                preg_match_all("~by( [a-z]+)+<~is",$data,$byes);    //">Syntax
+                $by = substr($byes[0][0],0,-1);
+            }
+            echo "<li>$f $by</li>\n";
             if(++$listed == $recents)
             {
                 break;
