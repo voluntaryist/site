@@ -81,8 +81,6 @@ $quotes_old = array(
     "Nothing is more silly than so say that the law made private property. The fact is the exact opposite. Private property came to exist and it made the law.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; John Maxcy Zane, THE STORY OF LAW (1927), from the last paragraph of Chapter 8.",
     "&ldquo;Once a regime is no longer able to frighten the people - to terrorize them into passive submission - then that regime is in big trouble.&rdquo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gene Sharp on &ldquo;The Two-Way &mdash; NPR News Blog,&rdquo; Feb. 22, 2011.",
     "&ldquo;Once you have government health care, it can be used to justify almost any restraint on freedom: After all, if the state has to cure you, it surely has an interest in preventing you needing treatment in the first place. ... And if they can't get you on grounds of your personal health, they'll do it on grounds of planetary health.&rdquo; <br>- Mark Steyn, &ldquo;Live Free or Die!&rdquo;, IMPRIMIS (April 2009), p. 4 ",
-    "&ldquo;One must be in a position to compel the person who will not respect the lives, health, personal freedom or private property of others to acquiesce in the rules of life in society.&rdquo; <br> -Hans-Hermann Hoppe, &ldquo;Introduction&rdquo; to Murray Rothbard, THE ETHICS OF LIBERTY (1998), quoting Ludwig von Mises, LIBERALISM ",
-    "&ldquo;One must be in a position to compel the person who will not respect the lives, health, personal freedom or private property of others to acquiesce in the rules of life in society.&rdquo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hans-Hermann Hoppe, &ldquo;Introduction&rdquo; to Murray Rothbard, THE ETHICS OF LIBERTY (1998), quoting Ludwig von Mises, LIBERALISM (1978), p. 37.",
     "&ldquo;Online mapmaking, known as GeoWeb, is similar to Wikipedia, the online enclyclopedia, in that they both reflect the collective knowledge of millions of contributors. [Although mapmaking in Western civilization has not been monopolized by governments, millions of mapmakers are less likely to be wrong than one centralized agency responsible for cartography.]&rdquo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See Miguel Helft, &rdquo;Mapmaking for the masses, online,&rdquo; INTERNATIONAL HERALD TRIBUNAL, July 26, 2007",
     "&ldquo;Only when the tide goes out do you discover who's been swimming naked.&rdquo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Warren Buffet",
     "&ldquo;Opposition to political authority does not entail opposition to social order.&rdquo;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aeon J. Skoble, DELETING THE STATE (2008), p. 6.",
@@ -325,6 +323,9 @@ $dated = array(
     1440963183 => array(
         "“In most of the United States a prospective pilot could buy a plane and try to teach him­ or herself to fly. One such young man bought a surplus Curtiss Jenny for $500; then, never having flown himself (and with only a little informal flight instruction), he tried to take off. He rose slightly from the ground, realized that he did not have the plane under control, and chose not to continue the flight. He managed to get the plane back down without destroying it. Fortunately for him, another pilot gave him a half­hour free lesson before he took off again on his first solo flight. Although he did eventually become a skilled pilot, others who tried to learn flying by such haphazard methods were not so lucky as young Charles Lindbergh.”<br/> - Bill Robie, FOR THE GREATEST ACHIEVEMENT (1993), pp. 108-109."
         ),
+    1440963184 => array(
+        "No legal tender law is ever needed to make men take good money; its only use is to make them take bad money.<br/>- Stephen Byington"
+        ),
     );
 $quotes = $quotes_old;
 foreach($dated as $date)
@@ -439,7 +440,7 @@ if(count(get_included_files()) == 1)
 
                     <h3>Current News and Updates:</h3>
                     <center><a href="http://www.voluntaryist.com/books/rendernot.html">
-                    <img src="http://www.voluntaryist.com/imgs/rendernotad.jpg"></a></center><br><br>
+                    <img src="http://www.voluntaryist.com/imgs/rendernotad.bmp"></a></center><br><br>
                         <div style="border-width: 1px; border-style: solid; border-color: #C60000; padding: 4px;">
                             <u><strong>A VOLUNTARYIST CONTEST</strong></u><br/>
                             How do you explain to people that <em>Taxation is Theft</em>?<br/>
