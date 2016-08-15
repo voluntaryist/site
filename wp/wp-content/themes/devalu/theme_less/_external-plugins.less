@@ -1,0 +1,105 @@
+/*
+// Contact Form 7
+// ------------------
+*/
+.wpcf7 p{
+	margin-bottom: 25px;
+}
+.wpcf7 input[type="text"], .wpcf7 input[type="email"]{
+	width: 50%;
+}
+
+.wpcf7 select{
+	.font-size(14);
+}
+
+//Checkbox & Radios
+.wpcf7 input[type="checkbox"], .wpcf7 input[type="radio"]{
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	margin-right: 5px;
+	margin-top: 0;
+}
+.wpcf7-list-item{
+	display: block;
+	margin-bottom: 5px;
+	line-height: 20px;
+}
+
+//Textarea
+.wpcf7 textarea{
+	width: 80%;
+}
+
+//Submit Button
+.wpcf7 input[type="submit"]{
+	width: auto;
+	border-color: @gray;
+	.transition(background-color 200ms);
+	padding: 6px 15px;
+}
+.wpcf7 input[type="submit"]:hover{
+	background-color: @gray;
+	color: #fff;
+}
+.wpcf7 input[disabled="disabled"]{
+	opacity: 0.3;
+}
+//Quiz
+.wpcf7-quiz{
+	margin-bottom: 0;
+}
+
+//Errors
+.wpcf7-not-valid{
+	border-color: red;
+}
+
+
+/*
+// Jetpack
+// ------------------
+*/
+//Infinite Scroll
+.infinite-loader{
+	height: 50px;
+	margin: 50px 0;
+}
+.infinite-loader .spinner{
+	left: 50%!important;
+	top: 50%!important;
+	.translate(-50%;-50%);
+}
+
+
+
+/*
+// Easy MailChimp Forms
+// ------------------
+*/
+.widget_yikes_mc_widget input[type="submit"]{
+	display: inline-block;
+	width: auto;
+	background-color: transparent;
+	border: 2px solid @gray-light;
+	color: @gray-light;
+}
+.widget_yikes_mc_widget input[type="submit"]:hover{
+	background-color: @gray-lighter;
+	border: 2px solid @gray-lighter;
+	color: @gray;
+}
+.widget_yikes_mc_widget input[type="text"]{
+	border: none;
+}
+.widget_yikes_mc_widget .yks-mailchimpFormDivSubmit{
+	margin: 0;
+}
+.widget_yikes_mc_widget p{
+	padding-top: 0!important;
+}
+.widget_yikes_mc_widget .yks-status p{
+	color: @gray-lighter;
+	margin-bottom: 10px;
+}

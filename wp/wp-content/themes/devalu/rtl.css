@@ -1,0 +1,861 @@
+/*
+Theme Name: Impronta
+Theme URI: https://www.quemalabs.com/theme/impronta/
+Author: Quema Labs
+Author URI: https://www.quemalabs.com
+Description: Impronta is a beautiful blogging theme. Focused on content, it is perfect for news sites, personal blogs, diary and much more. Has responsive design and will look amazing on mobile or desktop.
+Version: 1.0.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: impronta
+Tags: light, white, gray, left-sidebar, two-columns, responsive-layout, custom-background, custom-colors, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+*/
+/*
+----------------------------------------------------------------
+TABLE OF CONTENTS
+----------------------------------------------------------------
+1. Header
+2. Blog & Pages
+3. Footer
+4. Sidebar
+5. Comments
+6. Pace
+7. WordPress Default
+8. Global Styles
+9. Responsive Styles
+LESS Variables and Mixins
+----------------------------------------------------------------
+*/
+/*
+==========================================
+1. Header
+========================================== 
+*/
+
+/*-----------------------------*/
+/*
+Nav Menu
+---------------------------------------*/
+
+/*Top level list items*/
+#jqueryslidemenu ul.nav > li {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#jqueryslidemenu ul.nav > li::before {
+	right: 50%;
+	margin-right: -5%;
+	left: auto;
+	margin-left: auto;
+}
+
+#jqueryslidemenu ul.nav > li:hover::before {
+	right: 5%;
+	margin-right: 0;
+	left: auto;
+	margin-left: auto;
+}
+
+/*Top level menu link items style*/
+
+/* Active item ----------*/
+
+/*1st sub level menu*/
+
+/* Multi level dropdown -------*/
+
+.dropdown-submenu > .dropdown-menu {
+	right: 0;
+	margin-right: -1px;
+	left: auto;
+	margin-left: auto;
+}
+
+.dropdown-submenu > a:after {
+	float: left;
+	margin-left: -10px;
+	margin-right: auto;
+}
+
+.dropdown-submenu.pull-right > .dropdown-menu {
+	right: -100%;
+	margin-right: 10px;
+	left: auto;
+	margin-left: auto;
+}
+
+/* Mobile Nav icon (Hamburguer) -----------*/
+
+/* Dropdown arrow ------------*/
+.navbar .dropdown-toggle b {
+	margin-right: 5px;
+	margin-left: auto;
+}
+
+/*
+==========================================
+2. Blog & Pages
+========================================== 
+*/
+
+/*Main Title 								*/
+/*------------------------------------------*/
+
+.main-title::before {
+	right: 0;
+	left: 0;
+}
+
+/*Page Title 								*/
+/*------------------------------------------*/
+
+/*Post Title 								*/
+/*------------------------------------------*/
+
+.post-title a {
+	text-align: right;
+}
+
+/*Post										*/
+/*------------------------------------------*/
+
+.more-link::before {
+	right: 0;
+	left: auto;
+}
+
+/*Image Post								*/
+/*------------------------------------------*/
+
+.entry-date {
+	left: 20px;
+	right: auto;
+}
+
+/*Metadata 									*/
+/*------------------------------------------*/
+
+/*HR 										*/
+/*------------------------------------------*/
+
+/* Page Header								*/
+/*------------------------------------------*/
+
+/*Social Share								*/
+/*------------------------------------------*/
+.social-share {
+	left: 10px;
+	right: auto;
+}
+
+/*Pagination															*/
+/*----------------------------------------------------------------------*/
+
+.pagination a,
+.pagination span {
+	float: right;
+	margin-right: -2px;
+	margin-left: auto;
+}
+
+/*Pagination															*/
+/*----------------------------------------------------------------------*/
+
+/*
+==========================================
+Error 404
+========================================== 
+*/
+
+/*
+==========================================
+Tag Page
+========================================== 
+*/
+
+.tag-meta {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.tag-meta li {
+	margin-left: 1.42857142857143em;
+	margin-right: auto;
+}
+
+.tag-meta li i {
+	margin-left: 0.71428571428571em;
+	margin-right: auto;
+}
+
+/*
+==========================================
+Author Page
+========================================== 
+*/
+
+.author-image_wrap {
+	right: 0;
+	left: 0;
+}
+
+.author-meta {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.author-meta li {
+	margin-left: 1.42857142857143em;
+	margin-right: auto;
+}
+
+.author-meta li i {
+	margin-left: 0.71428571428571em;
+	margin-right: auto;
+}
+
+/*
+==========================================
+Search Page
+========================================== 
+*/
+
+.search-meta {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.search-meta li {
+	margin-left: 1.42857142857143em;
+	margin-right: auto;
+}
+
+.search-meta li i {
+	margin-left: 0.71428571428571em;
+	margin-right: auto;
+}
+
+/*
+==========================================
+3. Footer
+========================================== 
+*/
+/*
+Footer
+------------------------
+*/
+
+#footer ul,
+footer ol {
+	margin-right: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: auto;
+}
+
+/*
+==========================================
+Sub Footer
+========================================== 
+*/
+.sub-footer {
+	right: 40px;
+	left: 40px;
+}
+
+/*
+==========================================
+4. Sidebar
+========================================== 
+*/
+
+/*
+Search Form
+--------------------------------
+*/
+
+#sidebar .search-form .search-field {
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+#sidebar .search-form i {
+	left: 10px;
+	right: auto;
+}
+
+/*
+Widgets
+--------------------------------
+*/
+
+#sidebar .widget ul,
+#sidebar .widget ol {
+	margin-right: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: auto;
+}
+
+#sidebar .widget ul li ul {
+	margin-right: 30px;
+	margin-left: auto;
+}
+
+#sidebar .hasChildren i {
+	left: 5px;
+	right: auto;
+}
+
+/*
+Recent Comments Widget
+--------------------------------
+*/
+
+#sidebar .widget_recent_comments ul li {
+	padding-right: 28px;
+	padding-left: 0;
+}
+
+#sidebar .widget_recent_comments ul li i {
+	right: 0;
+	left: auto;
+}
+
+/*
+Tag Widget
+--------------------------------
+*/
+
+#sidebar .widget_tag ul li {
+	margin: 0 0 0.90909090909091em 0.90909090909091em;
+	float: right;
+}
+
+/*
+Search Widget
+--------------------------------
+*/
+
+.widget_search #s {
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+.widget_search #searchsubmit {
+	left: 15px;
+	right: auto;
+}
+
+.widget_search i {
+	left: 12px;
+	right: auto;
+}
+
+/*
+Instagram Widget
+--------------------------------
+*/
+.instagram_widget a {
+	margin-left: 3.8%;
+	margin-right: auto;
+}
+
+.instagram_widget a:nth-child(4n+0) {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/*
+Featured Posts
+--------------------------------
+*/
+
+.widget_featured_posts .f_post h5 {
+	left: 15px;
+	right: 15px;
+	text-align: left;
+}
+
+/*
+==========================================
+5. Comments
+========================================== 
+*/
+/*===========================================================================*/
+/*Comments																	 */
+/*===========================================================================*/
+
+.comment-list {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#comments .comment-meta {
+	margin-left: 5%;
+	margin-right: auto;
+}
+
+#comments .comment-meta .comment-author .avatar {
+	margin-left: 15px;
+	margin-right: auto;
+}
+
+#comments .comment-list .comment .comment-body .reply {
+	text-align: left;
+}
+
+/*===========================================================================*/
+/*Comments	Form															 */
+/*===========================================================================*/
+
+#respond .input-wrap {
+	margin: 0px 0 10px 15px;
+	float: right;
+}
+
+#respond input {
+	padding-right: 2.30769230769231em;
+	padding-left: 0;
+}
+
+#respond .controls-wrap i {
+	right: 0.71428571428571em;
+	left: auto;
+}
+
+#respond #submit-respond {
+	padding-right: 12px;
+	padding-left: 0;
+}
+
+/*
+==========================================
+6. Pace (Loading animation)
+========================================== 
+*/
+/*Animations at start
+*/
+
+.pace .pace-progress {
+	right: 0;
+	left: auto;
+}
+
+.pace .pace-progress-inner {
+	left: 0px;
+	right: auto;
+}
+
+.pace .pace-activity {
+	left: 15px;
+	border-right-color: #6ebafc;
+	right: auto;
+}
+
+/*
+==========================================
+7. WordPress Default
+========================================== 
+*/
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+/*------------------------------------------------------------
+ Defaul Widgets
+-------------------------------------------------------------- */
+/* Archive List Widget
+-------------------------------------- */
+
+/* Calendar Widget
+-------------------------------------- */
+
+#wp-calendar caption {
+	text-align: left;
+}
+
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+
+/* Categories Widget
+-------------------------------------- */
+
+/* Recent Comments Widget
+-------------------------------------- */
+
+.widget_recent_comments ul li::before {
+	right: 0;
+	left: auto;
+}
+
+#footer .widget_recent_comments ul li {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* Recent Entries Widget
+-------------------------------------- */
+
+/* RSS Widget
+-------------------------------------- */
+
+/* Search Widget
+-------------------------------------- */
+
+.widget_search #s {
+	padding-left: 32px;
+	padding-right: 0;
+}
+
+.widget_search #searchsubmit {
+	left: 15px;
+	right: auto;
+}
+
+.widget_search i {
+	left: 15px;
+	right: auto;
+}
+
+/* Tag Cloud Widget
+-------------------------------------- */
+
+/* Nav Menu Widget
+-------------------------------------- */
+
+.widget_nav_menu .menu-navigation-container .sub-menu {
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+/* Search Form
+-------------------------------------- */
+
+.search-form .search-submit {
+	left: 0;
+	right: auto;
+}
+
+.search-form label::before {
+	left: 15px;
+	right: auto;
+}
+
+.search-form i {
+	left: 12px;
+	right: auto;
+}
+
+/* Post Navigation
+-------------------------------------- */
+
+.post-navigation .nav-previous {
+	float: right;
+}
+
+.post-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+
+.post-navigation .nav-previous a {
+	padding-right: 45px;
+	padding-left: 0;
+}
+
+.post-navigation .nav-next a {
+	padding-left: 45px;
+	padding-right: 0;
+}
+
+.post-navigation .nav-previous a::before {
+	right: 20px;
+	left: auto;
+}
+
+.post-navigation .nav-next a::before {
+	left: 20px;
+	right: auto;
+}
+
+/*
+==========================================
+8. Global Styles
+========================================== 
+*/
+
+/*
+==========================================
+Social Nav
+========================================== 
+*/
+
+/* Custom button
+-------------------------------------------------- */
+/*
+* Buy Button
+*/
+.buy-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+}
+
+.buy-btn > span {
+	left: 0;
+	padding: 0.71428571428571em 0.85714285714286em 0.71428571428571em 1.07142857142857em;
+	right: auto;
+}
+
+/*
+* Download Button
+*/
+.download-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+	padding-left: 1.07142857142857em;
+	padding-right: 0;
+}
+
+/*
+* More Themes Button
+*/
+.more-themes-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+	padding-left: 1.07142857142857em;
+	padding-right: 0;
+}
+
+/*
+* Live Preview Button
+*/
+.preview-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+}
+
+/*
+* Pro Version Button
+*/
+.pro-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+}
+
+/*
+* Download Button
+*/
+.download-btn.contrast-btn {
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 4.57142857142857em;
+}
+
+/*
+* Contrast Button
+*/
+.contrast-btn {
+	padding-left: 3.42857142857143em;
+	padding-right: 0;
+}
+
+.contrast-btn i {
+	border-left: 2px solid #fff;
+	border-right: none;
+}
+
+/* Hover effect for thumbnails											*/
+/*----------------------------------------------------------------------*/
+
+.ql_thumbnail_hover > span {
+	right: 10px;
+	left: 10px;
+}
+
+/* Font size using REMs													*/
+/*----------------------------------------------------------------------*/
+.ql_brand {
+	right: 1.07142857142857em;
+	left: auto;
+}
+
+/* Inputs																*/
+/*----------------------------------------------------------------------*/
+
+/*
+	Header
+	========================================== 
+	*/
+  .logo_container {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/*
+	Content
+	--------------------------------
+	*/
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+/*
+==========================================
+9. Responsive Styles
+========================================== 
+*/
+/*
+	// Extra Small Breakpoint
+	// ------------------
+	*/
+@media (max-width: 767px) {
+
+/*
+	Content
+	--------------------------------
+	*/
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+}
+
+/*
+	Header
+	========================================== 
+	*/
+
+/*
+	Content
+	========================================== 
+	*/
+
+.metadata ul li {
+	float: right;
+}
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+/*
+	// Small Breakpoint
+	// ------------------
+	*/
+@media (min-width: 768px) and (max-width: 1345px) {
+
+.metadata ul li {
+	float: right;
+}
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+}
+
+/*
+	Header
+	--------------------------------
+	*/
+  /*
+	Content
+	========================================== 
+	*/
+  #main.col-md-push-3 {
+	right: 24.9%;
+	left: auto;
+}
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+/*
+	// Medium Breakpoint
+	// ------------------
+	*/
+@media (min-width: 1346px) and (max-width: 1509px) {
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+}
+
+/*
+	// Extra Larga Breakpoint
+	// ------------------
+	*/
+@media (min-width: 1510px) {
+
+/*
+	// Medium Breakpoint
+	// ------------------
+	*/
+@media (min-width: 1346px) and (max-width: 1509px) {
+
+/*
+	Sidebar
+	========================================== 
+	*/
+
+}
+
+}
+
+/*
+==========================================
+LESS Variables and Mixins
+========================================== 
+*/
+
+
+/* Generated by the RTLer - http://wordpress.org/extend/plugins/rtler/ */

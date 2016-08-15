@@ -1,0 +1,54 @@
+* 1.0.9 - 25/02/2016
+====================
+- Added: Twitch, Amazon, Behance, Dropbox, Tripadvisor, Yelp and Soundcloud social icons
+
+
+* 1.0.8 - 12/01/2016
+====================
+- Changed: CSS breakpoints for better support to smaller screens
+
+
+* 1.0.7 - 09/01/2016
+====================
+- Changed: sanitize function
+
+
+* 1.0.6 - 08/01/2016
+====================
+- Added: prefix to thumbnails size
+- Removed: sanitize function
+- Removed: unused variable from impronta_new_content_more()
+
+
+* 1.0.5 - 22/12/2015
+====================
+- Removed: sharing template tag function
+- Changed: screenshot
+
+
+* 1.0.4 - 21/12/2015
+====================
+- Fixed: escaping for css colors in styles.php
+- Changed: use of default hoverIntent plugin
+- Removed: social share buttons
+
+
+* 1.0.3 - 17/12/2015
+====================
+- Changed: enqueue of admin styles
+- Included: unminified version of CSS Animate
+
+
+* 1.0.2 - 12/11/2015
+====================
+- Added: Infinite Scroll support
+
+
+* 1.0.1 - 11/11/2015
+====================
+- Complete Theme Update
+
+
+* 1.0.0 - 17/09/2015
+====================
+- Released

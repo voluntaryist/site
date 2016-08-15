@@ -1,0 +1,334 @@
+.themes-container{
+	margin-bottom: 1.875rem;
+}
+.home .themes-container{
+	margin-bottom: 0;
+}
+.themes-container .theme{
+	width: 28.4%;
+	display: inline-block;
+	margin-right: 7%;
+	margin-bottom: 5%;
+}
+
+//Theme Type
+.themes-container .theme .theme-type{
+	display: block;
+	width: 100%;
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: 500;
+	.font-size(14);
+	margin-bottom: 0.35714285714286em;
+	color: @gray-light;
+	letter-spacing: 1px;
+}
+.themes-container .theme .theme-type i{
+	.font-size(17);
+	margin-right: 0.3125em;
+	position: relative;
+	top: 1px;
+}
+.themes-container .theme .theme-type i.ql-icon-ghost{
+	.font-size(15);
+}
+
+//Top Browser
+.top-browser{
+	background-color: @gray-lighter;
+	height: 22px;
+	line-height: 20px;
+	width: 100%;
+	border-radius: @border-radius-base @border-radius-base 0 0;
+	display: block;
+	position: relative;
+	padding: 0 10px;
+	z-index: 2;
+}
+.top-browser i{
+	width: 7px;
+	height: 7px;
+	line-height: 7px;
+	display: inline-block;
+	background-color: @gray-light2;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+.top-browser i:nth-child(1){
+	background-color: #ff5f57;
+}
+.top-browser i:nth-child(2){
+	background-color: #ffbd2e;
+}
+.top-browser i:nth-child(3){
+	background-color: #29cc41;
+}
+
+//Theme Image
+.themes-container .theme .theme-image{
+	margin-bottom: 0.9375rem;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.themes-container .theme .theme-image img{
+	border: 1px solid @gray-lighter;
+	width: 100%;
+	height: auto;
+}
+
+.themes-container .theme .theme-image .theme-image-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(110, 186, 252, 0.9);
+	z-index: 1;
+	border-radius: @border-radius-large @border-radius-large 0 0;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	.translate(0;100%);
+	.transition( transform 300ms );
+}
+.themes-container .theme .theme-image .theme-image-overlay b{
+	color: #fff;
+	display: inline-block;
+	margin-top: 30%;
+	padding: 10px 15px;
+	border: 2px solid #fff;
+}
+.themes-container .theme .theme-image:hover .theme-image-overlay{
+	.translate(0;0);
+}
+.themes-container .theme .theme-image:active .theme-image-overlay b{
+	color: @heroColor;
+	background-color: #fff;
+}
+
+//Theme Info
+.theme-info{
+	float: left;
+	width: 50%;
+}
+
+//Theme Name
+.themes-container .theme .theme-name{
+	.font-size(24);
+	margin-bottom: 0.04166666666667em;
+	text-transform: uppercase;
+}
+.themes-container .theme .theme-name a{
+	color: @gray;
+}
+.themes-container .theme .theme-desc{
+	color: @gray-light2;
+}
+
+
+//Theme Buy Button
+.theme-buy{
+	float: right;
+	display: block;
+	width: 50%;
+	text-align: right;
+	margin-top: 0.1875rem;
+}
+
+
+
+//More Themes
+.more-themes{
+	text-align: center;
+	margin-bottom: 3.75rem;
+}
+
+
+
+
+
+
+
+/*
+==========================================
+Single Theme
+========================================== 
+*/
+.single-theme-wrap{
+	position: relative;
+	overflow: hidden;
+}
+.single-theme-images{
+	border: 1px solid @gray-lighter;
+	background-color: #fff;
+}
+.single-theme-images img{
+	width: 100%;
+	height: auto;
+}
+
+
+//Single Theme Type
+.single-theme-container .theme-type{
+	display: block;
+	width: 100%;
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: 500;
+	.font-size(16);
+	margin-bottom: 0.5em;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.single-theme-container .theme-type i{
+	.font-size(22);
+	margin-right: 0.3125em;
+	position: relative;
+	top: 1px;
+}
+.single-theme-container .theme-type i.ql-icon-ghost{
+	.font-size(15);
+}
+
+//Prev and Next buttons
+.ql_main_images_btn{
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 70px;
+	height: 70px;
+	display: block;
+	z-index: 5;
+	background-color: rgba(255,255,255, 0.8);
+	text-align: center;
+	line-height: 70px;
+	opacity: 0.8;
+	outline: 0!important;
+	text-decoration: none!important;
+	.transition-property(transform); 
+	.transition-duration(400ms);
+	.rotateY(180deg);
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.ql_main_images_btn:hover{
+	opacity: 1;
+}
+.ql_main_images_btn:active{
+	margin-top: -34px;
+}
+
+.ql_main_images_btn i{
+	.font-size(40);
+	color: @gray;
+	line-height: 70px;
+}
+.ql_main_images_btn.ql_prev{
+	left: 0;
+	.transform-origin(left center);
+}
+.ql_main_images_btn.ql_next{
+	right: 0;
+	.transform-origin(right center);
+	.rotateY(-180deg);
+}
+.single-theme-wrap:hover .ql_main_images_btn{
+	.rotateY(0);
+}
+
+
+
+//Single Theme Info
+.single-theme-container .single-theme-info{
+	margin-top: 100px;
+	margin-left: 2.5rem;
+	vertical-align: top;
+}
+.single-theme-container .single-theme-info .single-theme-name{
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.single-theme-container .single-theme-info .single-theme-desc{
+	color: #fff;
+	.font-size(25);
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+//Single Theme Buttons
+.single-theme-btns{
+	margin: 5rem 0 5rem 2.5rem;
+	vertical-align: top;
+}
+.single-theme-btns .preview-btn{
+	margin-right: 2.5em;
+
+}
+.single-theme-btns .pro-btn{
+	margin-left: 2.5em;
+}
+
+
+//Theme Features
+.theme-features{
+	margin: 0 10% 5% 10%;
+}
+.theme-feature{
+	display: inline-block;
+	width: 35%;
+	margin: 2% 7%;
+	vertical-align: top;
+}
+.theme-feature i{
+	.font-size(48);
+	color: @heroColor;
+	margin-bottom: 0.20833333333333em;
+	display: block;
+}
+.theme-feature h4{
+	color: @gray-light;
+}
+.theme-feature p{
+	color: darken(@gray-light2, 10%);
+}
+
+
+
+
+
+
+
+//Themes Include
+.themes-include{
+	background-color: #f7f7f9;
+	padding: 3.75rem 0 3.75rem 0;
+}
+.themes-includes-title{
+	text-align: center;
+	font-weight: 200;
+	color: @gray-light;
+	margin-bottom: 2.08333333333333em;
+}
+.include-box{
+	margin-bottom: 40px;
+}
+.include-box i{
+	.font-size(48);
+	margin-bottom: 0.20833333333333em;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	color: darken(@gray-light, 5%);
+}
+.include-box .include-text{
+	display: inline-block;
+	width: 76%;
+	color: darken(@gray-light, 5%);
+}
+.include-box .include-text p{
+	color: lighten(@gray, 15%);
+	.font-size(14);
+}

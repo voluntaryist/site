@@ -33,7 +33,7 @@
             <a href="/classics/index.html" class=header>Classics</a><br />
             <a href="/homeschool.html" class=header>Homeschooling</a><br />
             <a href="/nonvoting/index.html" class=header>Non-Voting</a><br />
-            <a href="/coins.html" class=header>About Our Coins</a><br />
+            <a href="/aboutcoins.html" class=header>Gold, Silver, and About Our Coins</a><br />
             <a href="/property/index.html" class=header>Property &amp; Ideas</a><br />
             <a href="/taxation/index.html" class=header>Taxation is Theft</a><br />
             <a href="/nonviolence/index.html" class=header>Non-Violence</a><br />

@@ -37,6 +37,7 @@
         if($isMinor != '<!-- minor -->')
         {
             $f = preg_replace("/Good Government: Hope or Illusion.|Does Government protection Protect./","$0 by Robert LeFevre", $f[0]);
+            $by = '';
             if(false === stristr($f,'by'))
             {
                 $data = file_get_contents($fn);

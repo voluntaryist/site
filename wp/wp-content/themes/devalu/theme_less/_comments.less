@@ -1,0 +1,177 @@
+
+
+/*===========================================================================*/
+/*Comments																	 */
+/*===========================================================================*/
+
+
+#comments{
+	margin-bottom: 70px;
+	padding: 0 6.25em;
+}
+#comments h3{
+	margin-top: 0;
+}
+.comment-list{
+	margin-left: 0;
+	margin-top: 2.30769230769231em;
+	padding: 0;
+	list-style: none;
+}
+#comments .comment-list .comment{
+	list-style:none;
+	margin-bottom: 50px;
+}
+#comments .comment-list .comment.bypostauthor .comment-body{
+	border: 2px solid @gray;
+}
+
+#comments .comment-list .comment .comment-body{
+	margin-bottom: 20px;
+	background-color: @gray-lighter2;
+	padding: 30px;
+}
+
+#comments .comment-meta{
+	width: 20%;
+	margin-right: 5%;
+	display: inline-block;
+	vertical-align: top;
+}
+#comments .comment-meta .comment-author .avatar{
+	margin-right: 15px;
+}
+#comments .comment-meta .comment-author .fn{
+	.font-size(14);
+}
+#comments .comment-meta .comment-author .fn .url{
+	color: @gray;
+}
+#comments .comment-meta .comment-author .says{
+	.font-size(11);
+}
+
+#comments .comment-meta .comment-metadata{
+	.font-size(11);
+	margin-top: 10px;
+}
+#comments .comment-meta .comment-metadata a{
+	color: @gray-light2;
+}
+#comments .comment-meta .comment-metadata .edit-link{
+	display: block;
+}
+#comments .comment-meta .comment-metadata .edit-link a{
+	color: @gray-light2;
+}
+
+#comments .comment-content{
+	width: 74%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+#comments .comment-list .comment .comment-body .reply{
+	text-align: right;
+}
+#comments .comment-list .comment .comment-body .reply .comment-reply-link{
+	text-align-last: auto;
+	padding: 5px;
+	.font-size(14);
+	color: @gray-light;
+}
+
+
+
+
+
+
+
+/*===========================================================================*/
+/*Comments	Form															 */
+/*===========================================================================*/
+#respond{
+	margin: 70px 0;
+}
+#respond h3{
+	margin-top: 0;
+}
+
+
+#respond .input-wrap{
+	margin:0px 15px 10px 0;
+	float: left;
+	width: 31%;
+}
+#respond .input-wrap.textarea{
+	float: none;
+	width: 97%;
+}
+
+
+#respond .controls-wrap{
+	position: relative;
+}
+
+#respond input{
+	padding-left: 2.30769230769231em;
+	width: 100%;
+}
+
+#respond input:focus{
+	border-color: @gray-light;
+	outline:none;
+	@box_shadow: none;
+	.box-shadow(@box_shadow);
+}
+#respond .input label{
+	margin-bottom:5px;
+	display:block;
+}
+#respond textarea{
+	width: 100%;
+	height: 150px;
+	margin-bottom: 1.42857142857143em;
+}
+#respond textarea:focus{
+	border-color: @gray-light;
+	outline:none;
+	@box_shadow: none;
+	.box-shadow(@box_shadow);
+}
+#respond .textarea{
+	
+}
+
+#respond .controls-wrap i{
+	position: absolute;
+	left: 0.71428571428571em;
+	top: 0.71428571428571em;
+	color: #c4c4c4;
+	.font-size(14);
+}
+#respond .form-actions{
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}
+
+
+
+#respond #submit-respond{
+	outline: none;
+	width: auto;
+	padding-left: 12px;
+	height: auto;
+
+	&:hover{
+		.transition(all 200ms);
+		background-color: @gray;
+		border-color: @gray;
+		color: #fff;
+	}
+}
+
+
+
