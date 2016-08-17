@@ -1,0 +1,388 @@
+html{ font-size: 1em; overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color: inherit!important;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+iframe{
+	max-width: 100%;
+}
+b{
+	font-weight: 500;
+}
+a:hover{
+	text-decoration: none;
+}
+
+//For Equal Height Columns
+// #container > .row{
+// 	display: table;
+// }
+
+
+
+
+/*
+==========================================
+Social Nav
+========================================== 
+*/
+.social-menu{
+	margin: 1.875em 0;
+}
+.nav_social li{
+	display: inline-block;
+}
+.nav_social li a{
+	padding: 0!important;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: @gray-light;
+}
+.nav_social li a:hover{
+	color: #fff;
+	background-color: transparent;
+}
+
+.nav_social .screen-reader-text{
+	display: none;
+}
+.nav_social li a::before{
+	display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    .font-size(20);
+    line-height: 1em;
+    width: 24px;
+    height: 24px;
+    color: inherit;
+    text-decoration: none!important;
+}
+
+.nav_social li a[href*="facebook.com"]::before { content: "\f09a"; }
+.nav_social li a[href*="twitter.com"]::before { content: "\f099"; }
+.nav_social li a[href*="dribbble.com"]::before { content: "\f17d"; }
+.nav_social li a[href*="instagram.com"]::before { content: "\f16d"; }
+.nav_social li a[href*="flickr.com"]::before { content: "\f16e"; }
+.nav_social li a[href*="youtube.com"]::before { content: "\f167"; }
+.nav_social li a[href*="github.com"]::before { content: "\f09b"; }
+.nav_social li a[href*="vimeo.com"]::before { content: "\f194"; }
+.nav_social li a[href*="foursquare.com"]::before { content: "\f180"; }
+.nav_social li a[href*="skype.com"]::before { content: "\f17e"; }
+.nav_social li a[href*="plus.google.com"]::before { content: "\f0d5"; }
+.nav_social li a[href*="tumblr.com"]::before { content: "\f173"; }
+.nav_social li a[href*="linkedin.com"]::before { content: "\f0e1"; }
+.nav_social li a[href*="pinterest.com"]::before { content: "\f231"; }
+.nav_social li a[href*="/feed/"]::before { content: "\f09e"; }
+.nav_social li a[href*="wordpress.com"]::before { content: "\f19a"; }
+.nav_social li a[href*="wordpress.org"]::before { content: "\f19a"; }
+.nav_social li a[href*="500px.com"]::before { content: "\f26e"; }
+.nav_social li a[href*="twitch.tv"]::before { content: "\f1e8"; }
+.nav_social li a[href*="amazon.com"]::before { content: "\f270"; }
+.nav_social li a[href*="behance.com"]::before { content: "\f1b4"; }
+.nav_social li a[href*="dropbox.com"]::before { content: "\f16b"; }
+.nav_social li a[href*="tripadvisor.com"]::before { content: "\f262"; }
+.nav_social li a[href*="yelp.com"]::before { content: "\f1e9"; }
+.nav_social li a[href*="soundcloud.com"]::before { content: "\f1be"; }
+
+
+
+
+#sidebar hr{
+	border-color: @gray;
+	border-width: 3px;
+	width: 30%;
+}
+
+/* Custom button
+-------------------------------------------------- */
+/*
+* Buy Button
+*/
+.buy-btn{
+	background-color: @heroColor;
+	border: 2px solid @heroColor;
+	color: #fff;
+	border-radius: @border-radius-base;
+  	font-weight: 500;
+  	position: relative;
+  	overflow: hidden;
+  	text-transform: uppercase;
+  	display: inline-block;
+  	padding: 0.71428571428571em 4.57142857142857em 0.71428571428571em 1.07142857142857em;
+  	.font-size(14);
+  	text-align: center;
+  	outline: none!important;
+  	&:active, &:focus{
+		top: 1px;
+		color: #fff;
+	}
+}
+
+.buy-btn:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.buy-btn:active, .buy-btn:focus{
+	top: 1px;
+	color: #fff;
+}
+.buy-btn > span {
+	display: block;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	color: darken( @heroColor, 10% );
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 0.85714285714286em;
+	.transition(~"background 150ms, color 150ms");
+}
+.buy-btn:hover > span {
+	background-color: @heroColor;
+	color: #fff;
+}
+
+/*
+* Download Button
+*/
+.download-btn{
+	.buy-btn;
+	.transition(~"color 150ms, background 150ms");
+	padding-right: 1.07142857142857em;
+}
+.download-btn:hover{
+	color: darken( @heroColor, 10% );
+	background-color: #fff;
+}
+
+
+/*
+* More Themes Button
+*/
+.more-themes-btn{
+	.buy-btn;
+	.transition(~"color 150ms, background 150ms");
+	padding-right: 1.07142857142857em;
+	.font-size(20);
+}
+.more-themes-btn:hover{
+	color: darken( @heroColor, 10% );
+	background-color: #fff;
+}
+
+/*
+* Live Preview Button
+*/
+.preview-btn{
+	.buy-btn;
+	.transition(~"color 150ms, background 150ms");
+	padding: 0.71428571428571em 1.07142857142857em!important;
+	color: #fff!important;
+	&:hover{
+		background-color: #fff!important;
+		color: darken( @heroColor, 10% )!important;
+	}
+}
+
+
+/*
+* Pro Version Button
+*/
+.pro-btn{
+	.preview-btn;
+	border-color: transparent!important;
+	&:hover{
+		border-color: #fff!important;
+	}
+}
+
+/*
+* Download Button
+*/
+.download-btn.contrast-btn{
+	.buy-btn;
+	padding: 0.71428571428571em 1.07142857142857em!important;
+	background-color: #fff!important;
+	border-color: #fff;
+	color: darken( @heroColor, 10% );
+	&:hover{
+		background-color: transparent!important;
+	}
+}
+
+/*
+* Contrast Button
+*/
+.contrast-btn{
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: darken( @heroColor, 10% );
+	padding: 0;
+	padding-right: 3.42857142857143em;
+}
+.contrast-btn:hover{
+	color: #fff;
+	background-color: transparent;
+}
+.contrast-btn i{
+	font-style: normal;
+	padding: 0.71428571428571em 1.07142857142857em 0.71428571428571em 1.07142857142857em;
+	display: block;
+	background-color: #fff;
+	.transition(~"background 150ms, color 150ms");
+	border-right: 2px solid #fff;
+}
+.contrast-btn:hover i{
+	background-color: transparent;
+}
+.contrast-btn > span {
+	color: #fff;
+	background-color: transparent;
+
+}
+.contrast-btn:hover > span {
+	color: #fff;
+	background-color: transparent;
+}
+
+
+
+/* Hover effect for thumbnails											*/
+/*----------------------------------------------------------------------*/
+.ql_thumbnail_hover{
+	position: relative;
+	display: block;
+	text-align: center;
+}
+.ql_thumbnail_hover > span{
+	display: block;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	z-index: 5;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	.transition( all 200ms linear);
+	.opacity(0);
+	border-radius: @border-radius-small;
+}
+.ql_thumbnail_hover:hover > span{
+	.opacity(100);
+}
+.ql_thumbnail_hover > span > i{
+	.transition( all 200ms ease-in-out);
+	color: @gray;
+	font-size: 3em;
+	position: relative;
+	padding: 13px 16px;
+	top:45%;
+	.opacity(0);
+	.scale(0);
+}
+.ql_thumbnail_hover:hover > span > i{
+	.opacity(100);
+	.scale(1);
+}
+
+
+
+
+/* Font size using REMs													*/
+/*----------------------------------------------------------------------*/
+.font-size(@size: 14){
+	font-size: unit(@size, px);
+	font-size: unit(@size / @font-size-base, rem); //Bootstrap variable
+}
+
+
+.ql_brand{
+	position: absolute;
+	bottom: 0;
+	left: 1.07142857142857em;
+	padding-bottom: 1.07142857142857em;
+	z-index: 3;
+	font-size: 0.78571428571429em;
+	text-align: center;
+	color: @gray-light2;
+	width: 165px;
+	display: block;
+	margin-bottom: 0;
+	background-color: @body-bg;
+	a{
+		color: @gray-light2;
+	}
+}
+
+
+
+.tooltip{
+	.font-size(12);
+	font-weight: 300;
+}
+
+
+/* Inputs																*/
+/*----------------------------------------------------------------------*/
+input, textarea{
+	display: block;
+  width: 100%;
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical @padding-base-horizontal;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @input-color;
+  vertical-align: middle;
+  background-color: @input-bg;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 2px solid @input-border;
+  border-radius: @input-border-radius;
+  margin-bottom: 0.71428571428571em;
+
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  .form-control-focus();
+
+  // Placeholder
+  //
+  // Placeholder text gets special styles because when browsers invalidate entire
+  // lines if it doesn't understand a selector/
+  .placeholder();
+
+  // Disabled and read-only inputs
+  // Note: HTML5 says that controls under a fieldset > legend:first-child won't
+  // be disabled if the fieldset is disabled. Due to implementation difficulty,
+  // we don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    background-color: @input-bg-disabled;
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}
+textarea{
+	min-height: 100px;
+}
+
+

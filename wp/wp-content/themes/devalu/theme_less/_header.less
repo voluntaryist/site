@@ -1,0 +1,211 @@
+#header{
+	margin-bottom: 2.5rem;
+	position: relative;
+}
+
+
+#header .container{
+	position: relative;
+}
+
+
+
+.logo_container{
+	margin: 0;
+	text-align: center;
+}
+.logo_container h1{
+	margin: 0;
+}
+.logo_container .ql_logo{
+	.font-size(36);
+	margin-bottom: 1.875rem;
+	color: #fff!important;
+	position: relative;
+	outline: none!important;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+.logo_container .ql_logo:hover, .logo_container .ql_logo:active, .logo_container .ql_logo:focus{
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo_container .site-description{
+	color: @gray-light2;
+	.font-size(14);
+}
+/*-----------------------------*/
+
+
+
+
+/*
+Nav Menu
+---------------------------------------*/
+#ql_main-navigation.in{
+	overflow: visible;
+}
+
+#jqueryslidemenu{
+	margin: 1.875rem 0 5rem 0;
+	display: block;
+
+}
+#jqueryslidemenu ul.nav{
+}
+
+/*Top level list items*/
+#jqueryslidemenu  ul.nav > li{
+	margin-left: 0;
+	display: block;
+	text-align: center;
+	position: relative;
+	background-color: transparent!important;
+}
+#jqueryslidemenu  ul.nav > li::before{
+	display: block;
+	height: 1px;
+	width: 10%;
+	background-color: @gray;
+	content: " ";
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	bottom: 0;
+	margin-left: -5%;
+	.transition(all 200ms);
+}
+#jqueryslidemenu  ul.nav > li:hover::before{
+	width: 90%;
+	left: 5%;
+	margin-left: 0;
+}
+
+
+
+/*Top level menu link items style*/
+#jqueryslidemenu ul.nav > li > a{
+	text-decoration: none;
+	text-transform: uppercase;
+    .transition( all 150ms );
+    color: #fff;
+    .font-size(16);
+    padding: 0.75em 1.75em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    font-weight: 500;
+}
+#jqueryslidemenu ul.nav > li > a:hover, #jqueryslidemenu ul.nav > li > a:active, #jqueryslidemenu ul.nav > li > a:focus{
+	background-color: transparent!important;
+	color: #fff;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+	background-color: transparent;
+}
+/* Active item ----------*/
+#jqueryslidemenu ul.nav > li.current-menu-item > a{
+	color: #fff;
+}
+#jqueryslidemenu .current_page_item > a:hover, #jqueryslidemenu .current_page_parent > a:hover{
+
+}
+
+
+
+/*1st sub level menu*/
+#jqueryslidemenu ul.nav > li > ul{
+	z-index: 50;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+	.box-shadow(none);
+	border: none;
+	margin-bottom: 20px;
+	margin-top: 0;
+	float: none;
+}
+#jqueryslidemenu ul.nav > li > ul > li{
+	//border-bottom: 1px solid @gray-lighter;
+	text-align: center;
+}
+#jqueryslidemenu ul.nav > li > ul > li a{
+	.font-size(13);
+	padding: 0.5em 1.42857142857143em;
+	font-weight: bold;
+	color: @gray-light2;
+}
+#jqueryslidemenu ul.nav > li > ul > li a:hover{
+	color: #fff;
+	background-color: transparent;
+}
+
+
+
+
+
+/* Multi level dropdown -------*/
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+
+    left: 0;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+	color: inherit;
+    display: block;
+    content: "\f0da";
+    float: right;
+    width: 0;
+    height: 0;
+    margin-top: 0px;
+    margin-right: -10px;
+    font-size: 14px;
+    font-size: 1rem;
+    font-family: FontAwesome;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+
+
+
+
+/* Mobile Nav icon (Hamburguer) -----------*/
+//Mobile Nav Btn
+#ql_nav_btn{
+	margin: 10px 0 0;
+}
+#ql_nav_btn .icon-bar{
+	background-color: #fff;
+}
+#ql_nav_btn:hover .icon-bar{
+	background-color: #fff;
+}
+
+/* Dropdown arrow ------------*/
+.navbar .dropdown-toggle b{
+	color: @gray-light;
+	height: 15px;
+	margin-left: 5px;
+}

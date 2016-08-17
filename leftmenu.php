@@ -1,5 +1,7 @@
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
+<a class="at300b" title="Contribute on GitHub" href="https://github.com/voluntaryist/site">
+  <img style="height:16px;" src="/imgs/GitHub-Mark-32px.png" alt="Contribute on GitHub"></a>
 <a class="addthis_button_preferred_1"></a>
 <a class="addthis_button_preferred_2"></a>
 <a class="addthis_button_preferred_3"></a>
@@ -31,7 +33,7 @@
             <a href="/classics/index.html" class=header>Classics</a><br />
             <a href="/homeschool.html" class=header>Homeschooling</a><br />
             <a href="/nonvoting/index.html" class=header>Non-Voting</a><br />
-            <a href="/coins.html" class=header>About Our Coins</a><br />
+            <a href="/aboutcoins.html" class=header>Gold, Silver, and About Our Coins</a><br />
             <a href="/property/index.html" class=header>Property &amp; Ideas</a><br />
             <a href="/taxation/index.html" class=header>Taxation is Theft</a><br />
             <a href="/nonviolence/index.html" class=header>Non-Violence</a><br />

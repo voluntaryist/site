@@ -19,6 +19,20 @@ free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
 
 <!-- red #C60000 -->
 <link rel="stylesheet" href="voluntaryist.css" type="text/css">
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'>
+</script>
+<script type='text/javascript'>
+$(function(){
+    $('#btnD').click(function(e){
+        var site = $('input[name=sitesearch]:checked').val(),
+            iq   = $('input[name=q]'),
+            q    = iq.val(),
+            nq   = q + (site > '' ? ' ' + 'site:voluntaryist.com' : '');
+        location.href='https://www.duckduckgo.com?q=' + nq;
+        return false;
+    });
+});
+</script>
 </head>
 <body>
 
@@ -75,7 +89,7 @@ free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
                      on which State power ultimately depends.</p>
 
                     <center>
-                        <!-- SiteSearch Google -->
+                        <!-- SiteSearch -->
                         <div style='float: right'>
                             <a href='/supportus/plea.html' title='Voluntaryist.com accepts bitcoin, gold, and silver'>
                             <img src='/imgs/non_statist_coin.png' border="0"
@@ -91,43 +105,41 @@ free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
                              through Payal.</form>
                             <small><a href='/aboutcoins.html'>About Our Coins</a></small>
                         </div>
-                        <FORM method=GET action="http://www.google.com/search">
-                            <input type=hidden name=ie value=UTF-8>
-                            <input type=hidden name=oe value=UTF-8>
-                            <TABLE bgcolor="#FFFFFF"><tr><td>
-                            <A HREF="http://www.google.com/">
+                        <div style="width:833px">
+                            <FORM id=search method=GET action="http://www.google.com/search">
+                                <input type=hidden name=ie value=UTF-8>
+                                <input type=hidden name=oe value=UTF-8>
+                                <A HREF="http://www.google.com/" style='float:left'>
+                                    <IMG SRC="../www.google.com/logos/Logo_40wht.gif"
+                                    border="0" ALT="Google"></A>
+                                <INPUT TYPE=text name=q size=39 maxlength=255 value=""><br/>
+                                <INPUT type=submit name=btnG VALUE="Google Search">
+                                <INPUT type=submit id=btnD VALUE="DuckDuckGo Search"
+                                    title='Use DuckduckGo instead of Google'>
+                                <font size=-1>
+                                <input type=hidden name=domains value="www.Voluntaryist.com"><br><input type=radio id=ssw name=sitesearch value=""> WWW <input type=radio name=sitesearch value="http://www.voluntaryist.com" checked> Voluntaryist.com <br>
 
-                            <IMG SRC="../www.google.com/logos/Logo_40wht.gif"
-                            border="0" ALT="Google"></A>
-                            </td>
-                            <td>
-                            <INPUT TYPE=text name=q size=31 maxlength=255 value="">
-                            <INPUT type=submit name=btnG VALUE="Google Search">
-                            <font size=-1>
-                            <input type=hidden name=domains value="www.Voluntaryist.com"><br><input type=radio name=sitesearch value=""> WWW <input type=radio name=sitesearch value="http://www.voluntaryist.com" checked> Voluntaryist.com <br>
-
-                            </font>
-                            </td>
-                            </tr></TABLE>
-                        </FORM>
-                        <!-- SiteSearch Google -->
+                                </font>
+                            </FORM>
+                        </div>
+                        <!-- SiteSearch -->
                     </center>
 
                     <h3>Current News and Updates:</h3>
                     <center><a href="http://www.voluntaryist.com/books/rendernot.html">
                     <img src="http://www.voluntaryist.com/imgs/rendernotad.bmp"></a></center><br><br>
-                        <div style="border-width: 1px; border-style: solid; border-color: #C60000; padding: 4px;">
-                            <u><strong>VOLUNTARYIST CONTEST WINNER</strong></u><br/>
-                            How do you explain to people that <em>Taxation is Theft</em>?<br/>
-                            <em>The Voluntaryist</em> essay contest
-                            sought great answers to this important question.  The grand prize of
-                            five ounces of silver, one bitcoin and two books, <a
-                                href="http://www.governmentindicted.com/">Marc Stevens' GOVERNMENT INDICTED</a>, and <a
-                                href="https://www.goodreads.com/book/show/1992942.The_Lost_Science_of_Money">
-                            Steve Zarlenga's THE LOST SCIENCE OF MONEY</a> has been awarded to
-                            Marco den Ouden. <a href='http://voluntaryist.com/articles/sophslav.html'>
-                            Click here to read the winning entry, Sophisticated Slavery</a>.
-                        </div><br/>
+                    <!-- div style="border-width: 1px; border-style: solid; border-color: #C60000; padding: 4px;">
+                        <u><strong>VOLUNTARYIST CONTEST WINNER</strong></u><br/>
+                        How do you explain to people that <em>Taxation is Theft</em>?<br/>
+                        <em>The Voluntaryist</em> essay contest
+                        sought great answers to this important question.  The grand prize of
+                        five ounces of silver, one bitcoin and two books, <a
+                            href="http://www.governmentindicted.com/">Marc Stevens' GOVERNMENT INDICTED</a>, and <a
+                            href="https://www.goodreads.com/book/show/1992942.The_Lost_Science_of_Money">
+                        Steve Zarlenga's THE LOST SCIENCE OF MONEY</a> has been awarded to
+                        Marco den Ouden. <a href='http://voluntaryist.com/articles/sophslav.html'>
+                        Click here to read the winning entry, Sophisticated Slavery</a>.
+                    </div><br/ -->
 
                     <div style="border-width: 1px; border-style: solid; border-color: #C60000; padding: 4px;">
                         <center><b>The NEW Voluntaryist Email Group:</b></center><br>
@@ -146,7 +158,7 @@ free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
                             <u><strong>THE VOLUNTARYIST NEWSLETTER</strong></u><br/>
                             <em>The Voluntaryist</em> has been published
                             continuously since October 1982. Single back issues are available,
-                            as is <a href='http://voluntaryist.com/books/index.html#MustSpeak'>
+                            as well as <a href='http://voluntaryist.com/books/index.html#MustSpeak'>
                             <em>I MUST SPEAK OUT</em></a>, a book-length anthology
                             of important articles from the first one hundred issues.
                             <a href='/subscribe.html'>Click here</a> for Subscription and Back Issue information.
@@ -167,8 +179,7 @@ free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
                     <table style="width: 100%; border-width: 1px; border-style: solid; border-color: #C60000;">
                         <tr><td align=left><b>Recent Changes and Additions</b></td></tr>
                         <tr><td colspan=2>
-                            <ul><li><a href='books/index.html#tmtyg'>TAKE ME TO YOUR GOVERNMENT: FOUR FABLES</a></li>
-                                <?php include("recent.php");?>
+                            <ul><?php include("recent.php");?>
                             </ul>
                         </td></tr>
                     </table>

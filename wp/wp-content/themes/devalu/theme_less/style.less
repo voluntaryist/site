@@ -1,0 +1,133 @@
+/*
+Theme Name: Impronta
+Description: Responsive blog theme with beatiful animations, easy to use and awesome design.
+Version: 1.0.4
+Author: Quema Labs
+Author URI: http://www.quemalabs.com/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: featured-images, responsive-layout, two-columns, threaded-comments, custom-menu, light, sticky-post, translation-ready, white, photoblogging
+*/
+/*
+----------------------------------------------------------------
+TABLE OF CONTENTS
+----------------------------------------------------------------
+1. Header
+2. Blog & Pages
+3. Footer
+4. Sidebar
+5. Comments
+6. Pace
+7. WordPress Default
+8. Global Styles
+9. Responsive Styles
+LESS Variables and Mixins
+----------------------------------------------------------------
+*/
+
+html{ font-size: 1em; overflow-x: hidden; }
+
+/*
+==========================================
+1. Header
+========================================== 
+*/
+@import "_header.less";
+
+
+/*
+==========================================
+2. Blog & Pages
+========================================== 
+*/
+@import "_blog-pages.less";
+
+
+/*
+==========================================
+3. Footer
+========================================== 
+*/
+@import "_footer.less";
+
+
+/*
+==========================================
+4. Sidebar
+========================================== 
+*/
+@import "_sidebar.less";
+
+
+/*
+==========================================
+5. Comments
+========================================== 
+*/
+@import "_comments.less";
+
+
+/*
+==========================================
+6. Pace (Loading animation)
+========================================== 
+*/
+@import "_pace.less";
+
+
+/*
+==========================================
+7. WordPress Default
+========================================== 
+*/
+@import "_wp-default.less";
+
+
+/*
+==========================================
+8. Global Styles
+========================================== 
+*/
+@import "_global.less";
+
+
+
+
+/*
+==========================================
+9. Responsive Styles
+========================================== 
+*/
+	/*
+	// Extra Small Breakpoint
+	// ------------------
+	*/
+	@import "_mediaquery-xs.less";
+
+	/*
+	// Small Breakpoint
+	// ------------------
+	*/
+	@import "_mediaquery-sm.less";
+
+	/*
+	// Medium Breakpoint
+	// ------------------
+	*/
+	@import "_mediaquery-md.less";
+
+	/*
+	// Extra Larga Breakpoint
+	// ------------------
+	*/
+	@import "_mediaquery-lg.less";
+
+
+
+/*
+==========================================
+LESS Variables and Mixins
+========================================== 
+*/
+@import "../less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../less/mixins.less";

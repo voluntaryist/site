@@ -1,0 +1,308 @@
+#sidebar{
+	position: relative;
+	background-color: @sidebar-color;
+	padding: 2.5em 2.5em 6.25rem 2.5em;
+	//For Equal Height Columns
+	// float: none;
+ //    display: table-cell;
+ //    vertical-align: top;
+ //    padding-bottom: 80px;
+}
+
+
+
+
+
+/*
+Search Form
+--------------------------------
+*/
+#sidebar .search-form{
+	position: relative;
+	margin-bottom: 3.75em;
+}
+#sidebar .search-form .search-field{
+	background-color: transparent;
+	border: 2px solid @gray;
+	padding-right: 30px;
+	.placeholder(@gray);
+	color: @gray-light2;
+}
+#sidebar .search-form .search-field:focus{
+	border: 2px solid @gray-light;
+	.box-shadow(none);
+}
+#sidebar .search-form .search-submit{
+    display: none;
+}
+#sidebar .search-form label::before{
+    color: @gray;
+}
+#sidebar .search-form i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: @gray;
+}
+
+
+/*
+Widgets
+--------------------------------
+*/
+#sidebar .widget{
+	margin-bottom:3.125em;
+	position:relative;
+	padding: 0;
+}
+
+
+#sidebar .widget h4{
+	position: relative;
+	margin-bottom: 1.25em;
+	text-transform: uppercase;
+	.font-size(16);
+	font-weight: bold;
+	color: @gray-light2;
+}
+
+#sidebar .widget ul, #sidebar .widget ol{
+	margin-left:0px;
+	margin-bottom:0;
+	font-size:0.84615384615385em;
+	padding-left: 0;
+}
+
+#sidebar .widget .pagenav, #sidebar .widget .linkcat{
+	list-style:none;
+}
+#sidebar .widget ul li{
+	list-style:none;
+	//border-bottom: @gray-lighter 1px solid;
+}
+#sidebar .widget ul li:first-child{
+	border-top:none;
+}
+#sidebar .widget ul li > a:hover{
+	color: @heroColor;
+}
+#sidebar .widget > ul li > a{
+	color: @gray-light;
+	padding: 0.63636363636364em 0;
+	display:block;
+	font-weight: normal;
+	.transition( all 200ms);
+	.font-size(14);
+}
+#sidebar .widget > ul li > a:hover{
+	text-indent: 10px;
+	text-decoration: none;
+}
+
+
+#sidebar .widget ul li ul{
+	margin-left:30px;
+	margin-bottom:0;
+	margin-top:0!important;
+}
+#sidebar .widget ul li ul{
+	font-size:inherit;
+}
+#sidebar .widget ul li ul li:last-child{
+	border-bottom:none;
+}
+
+#sidebar .widget ul li ul, #sidebar .widget ul li ul li ul{
+	display:none;
+}
+#sidebar .hasChildren {
+	position: relative;
+}
+#sidebar .hasChildren i{
+	position: absolute;
+	top: 12px;
+	right: 5px;
+	font-size: 1.16666666666667em;
+}
+
+
+
+/*
+Recent Comments Widget
+--------------------------------
+*/
+#sidebar .widget_recent_comments ul#recentcomments{
+	margin-top:17px;
+}
+#sidebar .widget_recent_comments ul li{
+	padding-left:28px;
+	margin-bottom:10px;
+	border:none;
+	color:@gray-light;
+	position: relative;
+}
+#sidebar .widget_recent_comments ul li i{
+	position: absolute;
+	color: @heroColor;
+	left: 0;
+	top: 20%;
+	font-size: 1.45454545454545em;
+}
+#sidebar .widget_recent_comments ul li a{
+	display:inline;
+	background:none;
+	padding:0;
+}
+#sidebar .widget_recent_comments ul li a:hover{
+	color: @heroColor;
+	background: none;
+}
+
+/*
+Tag Widget
+--------------------------------
+*/
+#sidebar .widget_tag ul.wp-tag-cloud{
+	margin-top:20px;
+}
+#sidebar .widget_tag ul li{
+	display:inline-block;
+	margin:0 0.90909090909091em 0.90909090909091em 0;
+	float:left;
+	border:none;
+}
+
+#sidebar .widget_tag ul li a{
+	background-color: @gray-light2;
+	display:inline-block;
+	padding:3px 6px;
+	color:@body-bg;
+	font-weight:bold;
+	border-radius: 3px;
+	outline:none;
+}
+#sidebar .widget_tag ul li a:hover{
+	color:@gray-light;
+	text-decoration:none;
+	background-color: @body-bg;
+	text-indent: 0;
+}
+#sidebar .widget_tag ul li a:active{
+	position: relative;
+	top: 1px;
+}
+
+
+
+
+
+/*
+Search Widget
+--------------------------------
+*/
+.widget_search{
+	position:relative;
+}
+.widget_search #s{
+	width:100%;
+	display:block;
+	padding-right: 30px;
+}
+.widget_search #s:focus{
+	border-color: @gray-light;
+	.box-shadow(none);
+}
+
+.widget_search #searchsubmit{
+	background: none;
+	border:none;
+	width:17px;
+	height:17px;
+	display:block;
+	text-indent:-9999px;
+	position:absolute;
+	right: 15px;
+	top:7px;
+	cursor:pointer;
+	line-height:0;
+	box-shadow: none;
+}
+.widget_search i{
+	width:17px;
+	height:17px;
+	display:block;
+	position:absolute;
+	right: 12px;
+	top: 12px;
+	cursor:pointer;
+	font-size: 1em;
+	color: @gray-light;
+}
+
+
+/*
+Instagram Widget
+--------------------------------
+*/
+.instagram_widget a{
+	display: inline-block;
+	width: 22%;
+	margin-right: 3.8%;
+	margin-bottom: 3.8%;
+	opacity: 0.6;
+	.transition( opacity 150ms );
+}
+.instagram_widget a:hover{
+	opacity: 1;
+}
+.instagram_widget a:nth-child(4n+0){
+	margin-right: 0;
+
+}
+
+
+
+/*
+Featured Posts
+--------------------------------
+*/
+#sidebar .widget_featured_posts.affix{
+	position: fixed;
+	top: 40px;
+	width: 293px;
+}
+.widget_featured_posts .f_post{
+	position: relative;
+	background-color: #000;
+	margin-bottom: 0.625em;
+}
+.widget_featured_posts .f_post.no-image{
+	height: 120px;
+}
+.widget_featured_posts .f_post img{
+	width: 100%;
+	opacity: 0.4;
+	.transition( opacity 300ms );
+}
+.widget_featured_posts .f_post a:hover img{
+	opacity: 1;
+}
+.widget_featured_posts .f_post h5{
+	.transition( ~"opacity 300ms, transform 200ms" );
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	left: 15px;
+	text-align: right;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.widget_featured_posts .f_post a:hover h5{
+	opacity: 0;
+	.translate(15px; 0);
+}
+.widget_featured_posts .f_post.no-image a:hover h5{
+	opacity: 0.8;
+	.translate(0; 0);
+}

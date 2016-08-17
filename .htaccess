@@ -4,7 +4,7 @@ allow from all
 </Files>
 
 AddType application/x-httpd-php5 .html .php .htm
-AddHandler application/x-httpd-php5 .html .php .htm
+AddType application/x-httpd-php5 .html .php .htm
 
 deny from 180.76.
 deny from 213.186.
@@ -21,4 +21,4 @@ RewriteCond %{REQUEST_FILENAME} htm.?$
 RewriteCond %{REQUEST_FILENAME} -f 
 RewriteRule ^(.*/)?([^/]*)$ /newlay.php?file=%{REQUEST_FILENAME}&%{QUERY_STRING} [L]
 
-DirectoryIndex index.html
+DirectoryIndex index.html index.php

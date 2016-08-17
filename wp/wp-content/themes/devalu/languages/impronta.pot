@@ -1,0 +1,263 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Impronta\n"
+"POT-Creation-Date: 2015-11-11 15:29-0300\n"
+"PO-Revision-Date: 2015-11-11 15:29-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:39
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:60
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:91
+msgid "Comment"
+msgstr ""
+
+#: comments.php:103
+msgid "Name"
+msgstr ""
+
+#: comments.php:112
+msgid "Email"
+msgstr ""
+
+#: comments.php:121
+msgid "Website"
+msgstr ""
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:54
+msgid "Social Menu"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Headings Color"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "More Themes"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Leave a review"
+msgstr ""
+
+#: inc/extras.php:87
+msgid "Read more"
+msgstr ""
+
+#: inc/template-tags.php:22
+#, php-format
+msgctxt "post author"
+msgid "By %s"
+msgstr ""
+
+#: inc/template-tags.php:29 inc/template-tags.php:34
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:31
+#, php-format
+msgctxt "on categories"
+msgid "on %1$s "
+msgstr ""
+
+#: inc/template-tags.php:36
+#, php-format
+msgid "tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgid "- "
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "with "
+msgstr ""
+
+#: inc/template-tags.php:46
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:46
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:46
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:50
+msgid "Featured Post"
+msgstr ""
+
+#: inc/template-tags.php:100 inc/template-tags.php:101
+#: inc/template-tags.php:102
+msgid "Share"
+msgstr ""
+
+#: inc/theme-functions/wp_bootstrap_navwalker.php:197
+msgid "Add a menu"
+msgstr ""
+
+#: inc/widget-areas/widget-areas.php:9
+msgid "Sidebar"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: sidebar.php:58
+msgid "Powered by "
+msgstr ""
+
+#: sidebar.php:58
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: sidebar.php:58
+msgid "WordPress"
+msgstr ""
+
+#: sidebar.php:58
+msgid "Impronta designed by "
+msgstr ""
+
+#: sidebar.php:58
+msgid "https://www.quemalabs.com/"
+msgstr ""
+
+#. Author of the plugin/theme
+#: sidebar.php:58
+msgid "Quema Labs"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:23 template-parts/content-single.php:35
+#: template-parts/content.php:37
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:34
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: template-parts/pagination.php:11
+msgid "Previous page"
+msgstr ""
+
+#: template-parts/pagination.php:12
+msgid "Next page"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Impronta"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.quemalabs.com/theme/impronta/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Impronta is a beautiful blogging theme. Focused on content, it is perfect "
+"for news sites, personal blogs, diary and much more. Has responsive design "
+"and will look amazing on mobile or desktop."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.quemalabs.com"
+msgstr ""
