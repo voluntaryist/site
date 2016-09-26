@@ -39,7 +39,7 @@ $quotes_old = array(
     "&ldquo;I don't think I am obligated to find an answer to every question in the world. That being said, all I can do is take care of the means and live as close to my conscience as possible: educate myself and help educate others, and not contribute to the problem of coercive government.&rdquo;<br/> - Carl Watner (May 2007)",
     "I freed a thousand slaves. I could have freed a thousand more if only they knew they were slaves.<br/> - Attributed to Harriet Tubman",
     "\"I have a whole lot of conscience when it comes to dealing with people; but I sure don't have much conscience when it comes to dealing with the government.\" -Rob Metcalf (feed mill customer) ",
-    "I have lived in twelve nations, but if I could get off the planet, I would do it.<br/> - Doug Casey in LIBERTY OUTLOOK (August 1, 20112), p. 5.",
+    "I have lived in twelve nations, but if I could get off the planet, I would do it.<br/> - Doug Casey in LIBERTY OUTLOOK (August 1, 2012), p. 5.",
     "I postulate that the entire human race is suffering from a form of post-traumatic stress syndrome as a result of witnessing, participating in, or being victims of genocide, ecocide, depraved acts of warfare and mass destruction, and the perceived inevitability of the ultimate destruction of life on Earth.<br/> - Jeff Knaebel",
     "I was once asked if I thought the 'Founding Fathers' had good intentions. I replied that this was subjective and irrelevant. The only pertinent issue is whether they or any present day advocates of constitutional government believe[d] that protection and the other services governments provide should be provided on a voluntary basis. Would they arrest and place in jail a person who refused to contribute to the government? <br/> - paraphrased from Marc Stevens, ADVENTURES IN LEGAL LAND (2005), p. 224.",
     "I'm not designed to stop when the truth is involved.<br/> - Dr. Nicholas Gonzalez &ldquo;Interview&rdquo; in THE MONEYCHANGER (July 2012), p. 7.",
@@ -368,6 +368,18 @@ $dated = array(
         "Ideas end where a gun begins.<br/>- Ayn Rand, &ldquo;'Political' Crimes,&rdquo; (1970).",
         "The smallest minority on earth is the individual.<br/>- Ayn Rand, &ldquo;Racism,&rdquo; (1963).",
         "Progress cannot be planned by government.<br/>- Ayn Rand, &ldquo;The anti-Industrial Revolution,&rdquo; (1971)."
+        ),
+    1440160717 => array(
+        "Monetary debasement brings about cultural debasement, and ultimately personal debasement.<br/>- Attributed to Guido Hulsmann by Jeff Deist, &ldquo;The Free Lunch Is Over,&rdquo; in THE AUSTRIAN, July-August 2016, p. 7."
+        ),
+    1440160807 => array(
+        "There might be things we want to do, can afford to do, and have a legal right to do, that nonetheless we should not do because they are unjust or dishonourable or disloyal or demeaning.<br/>- Rabbi Lord Jonathan Sacks on Receiving the 2016 Templeton Prize",
+        "Everybody but university economists knows that you have to produce more than you consume, and save the difference, if you want to avoid starving to death.<br/>- Doug Casey Daily Dispatch, July 3, 2016",
+        "The beginning of wisdom is to call things by their true names.<br/>- An old Chinese proverb",
+        "From a moral point of view, there are [only] two types of people in the world. People who believe in coercion when dealing with their fellow humans. And people who believe in dealing voluntarily with their fellow humans.<br/>- Doug Casey Daily Dispatch, July 28, 2016."
+        ),
+    1440160821 => array(
+        "&ldquo;Credit expansion does not mean expansion of the real&ldquo; factors of production; &ldquo;it merely means expansion of the money supply through credit markets.&rdquo; <br/>- Jorg Guido Hulsmann, MISES (2007), P. 781."
         ),
     );
 $quotes = $quotes_old;
