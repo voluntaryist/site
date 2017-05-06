@@ -1,7 +1,8 @@
 <?php
     $recents = !isset($recents) ? 8 : $recents;
-    $files = array_merge(glob('*/index.ht*'), glob('*.html'));
+    $files = array_merge(glob('*/*/index.ht*'), glob('*/index.ht*'), glob('*.html'));
     $byTime = array();
+// echo "<!-- ".print_r($files,true)." -->";
     foreach($files as $f)
     {
         if(!preg_match("/^feed|tire/",$f))
@@ -10,6 +11,7 @@
             preg_match_all("~<a[^>]+?href=['\"]([^#:'\"]+)[#'\"][^>]*>.*?</a>~is",$data,$matches);
             foreach($matches[1] as $i => $m)
             {
+// echo "<!-- ".print_r($matches,true)." -->";
                 $lf = substr($m,0,1) == '/'
                     ? substr($m,1)
                     : preg_replace("#/index.ht.*$#",'',$f)."/$m";

@@ -1,5 +1,5 @@
 <?php
-$dave_is_testing = ($_SERVER['REMOTE_ADDR'] == '71.119.100.176');
+$dave_is_testing = (substr($_SERVER['HTTP_USER_AGENT'],-4) == ' DJS');
 
 function custom_head()
 {
@@ -31,6 +31,34 @@ function custom_head()
             location.href='https://www.duckduckgo.com?q=' + nq;
             return false;
         });
+        $('#num').click(function(){
+            if(isNaN($(this).val()))
+            {
+                $(this).val('');
+            }
+        });
+        $('#num').blur(function(){
+            if(isNaN($(this).val()))
+            {
+                $(this).val($(this).attr('inx'));
+            }
+        });
+        $('#nbtn').click(function(){
+            issNum = isNaN($('#num').val())
+                ? prompt("Which issue do you want?")
+                : $('#num').val();
+            if(issNum)
+            {
+                var vertPos = $(window).scrollTop();
+                while( vertPos == $(window).scrollTop() && issNum > 1 )
+                {
+                    location.hash='#i'+(1000+issNum).substr(-3);
+                    issNum = ''+(--issNum);
+                }
+            }
+            return false;
+        });
+        $("inum").submit(function(){return false;});
     });
     </script>
 ONREADY;
@@ -61,22 +89,98 @@ ATEND;
 
 function djs_sc_quote()
 {
-    include("../quotelist.php");
+    require_once("/home/voluntar/public_html/quotelist.php");
     srand((date('mYd')+1)*count($quotes));
     return $quotes[rand(0,count($quotes))];
 }
+
+function djs_disqus()
+{
+    $disq = <<< DISQ
+        <div id="disqus_thread" style="width: 500px"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'voluntaryist'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+DISQ;
+
+    return $disq;
+}
+
+function djs_priceAt( $atts )
+{
+    require_once("/home/voluntar/public_html/funcs.php");
+    $a = shortcode_atts( array(
+        'name' => 'Payment',
+        'doll' => 1,
+        ), $atts);
+    return priceAt2($a['doll'],$a['name'],true);
+}
+
+function djs_quotes()
+{
+    require_once('/home/voluntar/public_html/quotelist.php');
+    $qs = "";
+    foreach($quotes as $q)
+    {
+        $qs .= "$q<hr/>";
+    }
+    return $qs;
+}
+
+add_shortcode('all-quotes','djs_quotes');
 add_shortcode('daily-quote','djs_sc_quote');
 add_shortcode('addthis','djs_sc_addthis');
+add_shortcode('disqus-by-dave','djs_disqus');
+add_shortcode('djs-price-at','djs_priceAt'); // [djs-price-at doll="X" name="y"]
+
+function djs_header($h)
+{
+    static $hn = 0;
+    $hn = $hn+1;
+    if(is_array($h))
+    {
+        $h = print_r($h,true);
+    }
+    if(!headers_sent())
+    {
+        header("DJS$hn: $h");
+    }
+    else
+    {
+        echo("Tried to write header $h");
+    }
+}
 
 function custom_order_category( $query ) {
+
     // exit out if it's the admin or it isn't the main query
-    if ( is_admin() || ! $query->is_main_query() ) {
+    if ( is_admin() || ! $query->is_main_query() )
+    {
         return;
     }
     // order category archives by title in ascending order
-    if ( is_category(3) ) {
+    if ( is_category(3) ) // 3 is "How I Became"
+    {
         $query->set( 'order' , 'asc' );
         $query->set( 'orderby', 'title');
+        return;
+    }
+    elseif ( is_category(28) ) // 28 is "Articles"
+    {
+        $query->set( 'order' , 'asc' );
+        $query->set( 'orderby', 'ID');
+        // The theme php page will insert the Issue #s.
+        // --------------------------------------------
         return;
     }
 }
@@ -84,4 +188,12 @@ add_action( 'pre_get_posts', 'custom_order_category', 1 );
 
 if($dave_is_testing)
 {
+    function daveLog($x)
+    {
+        file_put_contents('/home/voluntar/public_html/DaveLog.txt', date('d M Y H:i:s').': '.$x."\r\n", FILE_APPEND);
+    }
+}
+else
+{
+    function daveLog($x) {}
 }
