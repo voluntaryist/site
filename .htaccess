@@ -17,21 +17,26 @@ RewriteRule ^ http://%1%{REQUEST_URI} [L,R=307]
 RewriteRule ^(.*)\.[0-9]+\.(css|js)$ $1.$2 [L]
 
 #RewriteCond %{REMOTE_ADDR} ^76\.174\.129\.203$
+#RewriteRule ^(/old/.*/)?([^/]*)$) /newlay.php?file=%{REQUEST_FILENAME}&%{QUERY_STRING} [L]
 
+#RewriteCond %{REMOTE_ADDR} ^76\.174\.129\.203$
 RewriteCond %{REQUEST_FILENAME} !newlay.php
 RewriteCond %{REQUEST_FILENAME} htm.?$
 RewriteCond %{REQUEST_FILENAME} -f 
 RewriteRule ^(.*/)?([^/]*)$ /newlay.php?file=%{REQUEST_FILENAME}&%{QUERY_STRING} [L]
 
-DirectoryIndex index.html index.php
+#DirectoryIndex index.html index.php
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /wp/
+#RewriteCond %{REMOTE_ADDR} ^76\.174\.129\.203$
 RewriteRule ^index\.php$ - [L]
+
+#RewriteCond %{REMOTE_ADDR} ^76\.174\.129\.203$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteRule . /wp/index.php [L]
 </IfModule>
 
 # END WordPress
