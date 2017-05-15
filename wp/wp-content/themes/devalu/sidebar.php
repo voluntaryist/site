@@ -23,7 +23,7 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ql_logo"><?php if ( !empty( $logo ) ) : echo '<img src="' . esc_url( $logo ) . '" />'; else: bloginfo( 'name' ); endif; ?></a></p>
 			<?php endif; ?>
 
-            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+            <p class="site-description"><?php echo html_entity_decode(get_bloginfo('description')); ?></p>
 
             <?php get_template_part( '/template-parts/social-menu', 'header' ); ?>
 
