@@ -320,9 +320,6 @@ $dated = array(
     1431314577 => array(
         "Every activity of government, from courts to Congress,  from sanitation workers to senators, from generals to attorney generals, from presidents to policemen, depends on stolen money.<br/> - Carl Watner, paraphrasing Theodore Lowi at p. 24 of I MUST SPEAK OUT."
         ),
-    1440963183 => array(
-        "&ldquo;In most of the United States a prospective pilot could buy a plane and try to teach him- or herself to fly. One such young man bought a surplus Curtiss Jenny for $500; then, never having flown himself (and with only a little informal flight instruction), he tried to take off. He rose slightly from the ground, realized that he did not have the plane under control, and chose not to continue the flight. He managed to get the plane back down without destroying it. Fortunately for him, another pilot gave him a half-hour free lesson before he took off again on his first solo flight. Although he did eventually become a skilled pilot, others who tried to learn flying by such haphazard methods were not so lucky as young Charles Lindbergh.&rdquo;<br/> - Bill Robie, FOR THE GREATEST ACHIEVEMENT (1993), pp. 108-109."
-        ),
     1440963184 => array(
         "No legal tender law is ever needed to make men take good money; its only use is to make them take bad money.<br/>- Stephen Byington"
         ),
@@ -407,6 +404,40 @@ $dated = array(
         "Both are thieves, the receiver as well as the stealer.<br/>- Phocylides, 6th Century BC poet, MORAL EPIGRAMS, cited in Richard Chesnoff, PACK OF THIEVES (1999), p. vii.",
         "What keeps a truly civil society together isn&rsquo;t laws, regulations, and police. It&rsquo;s peer pressure, social opprobrium, moral approbation, and your reputation. These are the four elements that keep things together. Western civilization is built on voluntarism. But, as the State grows, that&rsquo;s being replaced by coercion in every aspect of society.<br/>- Doug Casey On the End of Western Civilization, CASEY DAILY DISPATCH, May 6, 2017.",
         "I always like to try to turn a lemon into lemonade. But it&rsquo;s impossible if someone drops a 500-pound bomb on your kitchen, and follows it up with a poison gas attack. That said, I like to do what I can. Not because I expect success, but because it&rsquo;s the right thing to do. And that is as important, from a personal viewpoint, as anything in the world.<br/>- Doug Casey, &ldquo;On the Plague of Cultural Marxists,&rdquo; INTERNATIONAL MAN, May 7, 2017."
+        ),
+    1440170604 => array(
+        "No one has a right to anything just because they exist. ... Simply being alive doesn&apos;t give you the right to demand things from other people.<br/>- Doug Casey on Universal Basic Income, CASEY DAILY DISPATCH, June 3, 2017.",
+        "It is better to suffer injustice than to commit injustice.<br/>- Gunnar Jahn, Presentation Speech, The Nobel Peace Prize 1947."
+        ),
+    1440170808 => array(
+        "Money, if it does not bring you happiness, will at least help you be miserable in comfort.<br/>- Helen Gurley Brown",
+        "Nothing comes from nothing. Fake money produces fake prosperity. Take away the fake money ... and the fake prosperity goes &ldquo;poof.&rdquo;<br/>- Bill Bonner in CASEY DAILY DISPATCH, July 15, 2017.",
+        "Referring to the U.S. government's paper money: &ldquo;Pieces of paper with dead criminals printed on it controlled by communist bureaucrats.&rdquo;<br/>- Jeff Berwick of THE DOLLAR VIGILANTE.",
+        "Success is never final; failure is never fatal. It's courage that counts.<br/>- Attributed to John Wooden in Angela Duckworth, GRIT (2016), p. 264.",
+        "&ldquo;When the rulers c[o]me to see the people as 'their property' and the people's possessions as 'a common stock from which they have a right to take what they will,' Richard Price [1723-1791] wrote, governments become oppressive.&rdquo;<br/>- cited in Max Edling, A REVOLUTION IN FAVOR OF GOVERNMENT (2003), p. 61."
+        ),
+    1440170902 => array(
+        "&ldquo;If your plan is for one year, plant rice;<br/>For ten years, plant trees;<br/>For a hundred years, educate men.&rdquo;<br/>- attributed to Confucius"
+        ),
+    1440170909 => array(
+        "I think public [i.e., tax-supported] schools are bound to destroy this country  because they create public opinion that sanctions and endorses government intervention in an unhampered market.<br/>- R. C. Hoiles in a letter to Ludwig von Mises, Sept. 7, 1949."
+        ),
+    1440170917 => array(
+        "The good archer is one who shoots well, not necessarily the one that always hits the target. Eugen Herrigel in his book ZEN AND THE ART OF ARCHERY (1953) says that the goal ought to be to shoot well, not hitting the target, although paradoxically this may in fact lead to one hitting the target more often. Or as Gandhi put it, if one takes care of the means (shooting well) the end (hitting the target) will take care of itself.",
+        "Don't explain your philosophy. Embody it.<br/>- Epictetus",
+        "If it is not right, do not do it. If it is not true, do not say it.<br/>- Marcus Aurelius",
+        "Waste no more time arguing what a good man should be. Be one!<br/>- Marcus Aurelius",
+        "Every important lesson in Stoicism ... lead[s] back to personal responsibility, and that is where responsibility does lie.<br/>- TIMES columnist, Laura Kennedy"
+        ),
+    1440170925 => array(
+        "... just as the State has no money of its own, so it has no power of its own. All the power it has is what society gives it, plus what it confiscates from time to time on one pretext or another; there is no other source from which State power can be drawn. Therefore every assumption of State power, whether by gift or seizure, leaves society with so much less power. There is never, nor can there be, any strengthening of State power without a corresponding and roughly equivalent depletion of social power.<br/>- Albert Jay Nock, OUR ENEMY THE STATE, Chapter I, Sec 1, p. 3, (1935)."
+        ),
+    1440171001 => array(
+        "Whenever one compromises a principle, eventually the compromise devours the principle.<br/>- Tibor Machan in Duncan and Machan, LIBERTARIANISM (2005), P. 136."
+        ),
+    1440171015 => array(
+        "Luck is a dividend of sweat. The more you sweat, the luckier you get.<br/>- Ray Kroc, founder of McDonalds",
+        "Any proponent of private property must necessarily and logically be an anarchist.<br/>- Hans-Hermann Hoppe in &ldquo;Coming of Age with Murray&rdquo;",
         ),
     );
 $quotes = $quotes_old;

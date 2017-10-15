@@ -42,6 +42,5 @@
 
 			<div class="clearfix"></div>
 
-
 		</div><!-- /post-content -->
 </article><!-- #post-## -->
