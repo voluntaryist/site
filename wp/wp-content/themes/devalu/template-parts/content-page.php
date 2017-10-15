@@ -13,7 +13,7 @@
 	<div class="post-content">
 
 		<header class="entry-header">
-			<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+			<?php the_title( '<h2 class="post-title">', '</h2>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">

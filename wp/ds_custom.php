@@ -59,6 +59,7 @@ function custom_head()
             return false;
         });
         $("inum").submit(function(){return false;});
+        $('.aboer').click(function(){window.open('http://openexchangerates.org/'); return false;});
     });
     </script>
 ONREADY;
@@ -72,6 +73,8 @@ function djs_sc_addthis()
     <!-- AddThis Button BEGIN -->
     <div class="addthis_default_style"
         style="position:absolute;right:10px;top:10px;z-index:5;line-height:1;">
+    <!--a class="at300b" title="Creative Commons" href="/creative-commons/">
+        <img style="height:16px;" src="/imgs/cc.png" alt="Creative Commons"></a -->
     <a class="at300b" title="Contribute on GitHub" href="https://github.com/voluntaryist/site">
       <img style="height:16px;" src="/imgs/GitHub-Mark-32px.png" alt="Contribute on GitHub"></a>
     <a class="addthis_button_preferred_1"></a>
@@ -91,7 +94,12 @@ function djs_sc_quote()
 {
     require_once("/home/voluntar/public_html/quotelist.php");
     srand((date('mYd')+1)*count($quotes));
-    return $quotes[rand(0,count($quotes))];
+    $qi = rand(0,count($quotes));
+    if(date('mYd') == 9201704)
+    {
+        $qi = 0;
+    }
+    return "<!-- ".date('mYd')." -->".$quotes[$qi];
 }
 
 function djs_disqus()

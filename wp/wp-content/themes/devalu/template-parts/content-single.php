@@ -20,12 +20,11 @@
         <div class="post-content">
 
             <header class="entry-header">
-                <?php the_title( sprintf( '<h1 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+                <?php the_title( sprintf( '<h2 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
             </header><!-- .entry-header -->
 
                 <div class="entry-content">
                 <?php the_content(); ?>
-
                 <?php
                     wp_link_pages( array(
                         'before' => '<div class="page-links">' . esc_html__( 'Pages:',  'impronta' ),

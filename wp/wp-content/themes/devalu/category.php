@@ -36,6 +36,7 @@ get_header(); ?>
                             </FORM>
                         </div>
             </header><!-- .page-header -->
+<?php if($isArticles){ ?>
 <center>
     <form id='inum'>
         <font size=-1>
@@ -44,6 +45,7 @@ get_header(); ?>
         </font>
     </form>
 </center>
+<?php } ?>
 
             <div id="posts-container">
 
