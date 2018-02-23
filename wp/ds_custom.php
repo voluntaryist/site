@@ -145,6 +145,86 @@ function djs_quotes()
     return $qs;
 }
 
+function djs_tocidx()
+{
+    $djsci = <<< DJSC
+        <center>
+            <a href='/table-contents-archives-80s/'>80's Archive</a> |
+            <a href='/table-contents-archives-90s/'>90's Archive</a> |
+            <a href='/table-contents-archives-2000s/'>2000's Archive</a> |
+            <a href='/table-contents-archives-10-years/'>Last Ten Years</a>
+        </center>
+DJSC;
+    return $djsci;
+}
+
+function djs_toc_top()
+{
+    $djsci = <<< DJSC
+        <h3 style="text-align: center;">for all issues of <i>The Voluntayist</i></h3>
+        <p style="text-align: center;">All issues have been archived in PDF format. To access any particular one, click on its Issue Number.
+        Carl Watner grants permission to reprint his own articles without special request.</p>
+
+        <header class="page-header"><form id="search" action="http://www.google.com/search" method="GET">
+        <div style="text-align: center;"><a href="http://www.google.com/"><img class="aligncenter" src="http://www.google.com/logos/Logo_40wht.gif" alt="Google" border="0" /></a>
+        <input maxlength="255" name="q" size="39" type="text" value="" /><br />
+        <input name="btnG" type="submit" value="Google Search" />
+        <input id="btnD" title="Use DuckduckGo instead of Google" type="submit" value="DuckDuckGo Search" /><br />
+        <input id="ssw" name="sitesearch" type="radio" value="" /> WWW <input checked="checked" name="sitesearch" type="radio" value="http://voluntaryist.com" /> Voluntaryist.com</div>
+        </form><form id="inum"><input id="nbtn" type="submit" value="Go To Issue" /><br />
+        <input id="num" size="1" type="text" value="Iss #" /></form></header>
+        <div></div>
+        <script>
+        free1 = new Image();
+        free1.src = "http://www.voluntaryist.com/imgs/free1.jpg";
+        free2 = new Image();
+        free2.src = "http://www.voluntaryist.com/imgs/free2.jpg";
+        $(function(){
+            $('#num').click(function(){
+                if(isNaN($(this).val()))
+                {
+                    $(this).val('');
+                }
+            });
+            $('#num').blur(function(){
+                if(isNaN($(this).val()))
+                {
+                    $(this).val($(this).attr('inx'));
+                }
+            });
+            $('#nbtn').click(function(){
+                issNum = isNaN($('#num').val())
+                    ? prompt("Which issue do you want?")
+                    : $('#num').val();
+                if(issNum)
+                {
+                    var isNum = issNum*1,
+                        issF = $("a[name^='i']:first").attr('name').substr(1)*1,
+                        issL = $("a[name^='i']:last").attr('name').substr(1)*1;
+                    if(isNum < issF || isNum > issL)
+                    {
+                        var tocPage = isNum < 102
+                            ? (isNum < 42 ? "-80s" : "-90s")
+                            : (isNum < 144 ? "-2000s" : "-10-years");
+                        location.href='/table-contents-archives'+tocPage
+                            +'/#i'+(1000+issNum).substr(-3);
+                    }
+                    else
+                    {
+                        location.hash='#i'+(1000+issNum).substr(-3);
+                    }
+                }
+                return false;
+            });
+            $("inum").submit(function(){return false;});
+        });
+        </script>
+DJSC;
+    return $djsci;
+}
+
+add_shortcode('toc-top','djs_toc_top');
+add_shortcode('toc-idx','djs_tocidx');
 add_shortcode('all-quotes','djs_quotes');
 add_shortcode('daily-quote','djs_sc_quote');
 add_shortcode('addthis','djs_sc_addthis');

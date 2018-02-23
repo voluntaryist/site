@@ -439,6 +439,19 @@ $dated = array(
         "Luck is a dividend of sweat. The more you sweat, the luckier you get.<br/>- Ray Kroc, founder of McDonalds",
         "Any proponent of private property must necessarily and logically be an anarchist.<br/>- Hans-Hermann Hoppe in &ldquo;Coming of Age with Murray&rdquo;",
         ),
+    1440171021 => array(
+        "Just because something is legal and moral doesn&apos;t mean it can&apos;t also be stupid.<br/>- Doug Casey DAILY DISPATCH, October 20, 2017."
+        ),
+    1440171022 => array(
+        "If anyone wants to increase the power of the state, a terrorist attack is probably the single most effective way to do so.<br/>- Brian Martin, RULING TACTICS (2017), p. 109."
+        ),
+    1440171030 => array(
+        "It is impossible for government to establish State education in Britain [circa 1843] without committing something worse than highway robbery This is a bold assertion; yet there is nothing more true. We have seen how utterly impracticable it is for the State, by its <em>unitive scheme</em>, to impart anything like education to the children of men who differ so widely in their religious, moral, historical, and political opinions. If the State intends to do any good, it must therefore either make a choice of one of the existing religions, or invent one of its own. Let us suppose the choice made, and for the sake of illustration let the Roman Catholic be the favored religion. Of course, no Independent, Churchman, Jew, or Unitarian would in this case consent to send his children to the government school, which nevertheless he would be obliged to support through the national funds, although receiving no benefit from them. Now, would this not be using the property of some for the benefit of others? Would not this be robbery? Yet this is not all. The dissenters, whoever they may be, would be compelled to pay for the education, therefore, the government would really do something worse than the highway robber, for the latter takes your purse only, whereas the former would not only rob you, but actually use your money to propagate tenets and ideas which you might detest and abhor, and which might tend to undermine the sect or party to which you belong.<br/>- Anonymous, REASONS AGAINST GOVERNMENT INTERFERENCE IN EDUCATION (1843), reprinted in George H. Smith and Marilyn Moore (eds.), CRITICS OF STATE EDUCATION (2017), pp. 299-300."
+        ),
+    1440171218 => array(
+        "I often say the difference between being born and dying is a suit and a pair of shoes. People forget that, but they don't take anything with them [when they die]. Only the Egyptians put jewelry in their tombs.<br/>- Belmiro de Azevedo (one of Portugal's richest men), quoted in THE WALL STREET JOURNAL, Dec. 9-10, 2017, p. A9.",
+        "Production must come before consumption. Let me state the obvious: you cannot eat turnips unless you first grow them. And if you eat the turnip seed, you cannot grow them.<br/>- Franklin Sanders in THE MONEYCHANGER, Oct. 2017, pp. 9-10."
+        ),
     );
 $quotes = $quotes_old;
 foreach($dated as $date)
