@@ -18,11 +18,6 @@ function custom_head()
                 src = ti.attr('src');
             ti.attr('src',src.replace('ee1','ee2'));
         });
-        $(window).resize(function()
-        {
-            var tg=$('img:eq(0)');
-            tg.width(Math.min($('img:eq(1)').position().left-4,150));
-        });
         $('#btnD').click(function(e){
             var site = $('input[name=sitesearch]:checked').val(),
                 iq   = $('input[name=q]'),
@@ -149,9 +144,10 @@ function djs_tocidx()
 {
     $djsci = <<< DJSC
         <center>
-            <a href='/table-contents-archives-80s/'>80's Archive</a> |
-            <a href='/table-contents-archives-90s/'>90's Archive</a> |
-            <a href='/table-contents-archives-2000s/'>2000's Archive</a> |
+            <a href='/table-contents-archives/'>All Issues</a> |
+            <a href='/table-contents-archives-80s/'>80's</a> |
+            <a href='/table-contents-archives-90s/'>90's</a> |
+            <a href='/table-contents-archives-2000s/'>2000's</a> |
             <a href='/table-contents-archives-10-years/'>Last Ten Years</a>
         </center>
 DJSC;
@@ -160,8 +156,13 @@ DJSC;
 
 function djs_toc_top()
 {
+    $linkLine = djs_tocidx();
+    $rPrice = djs_priceAt(array(
+        'name' => 'Reprint Vol.1',
+        'doll' => 20,
+        ));
     $djsci = <<< DJSC
-        <h3 style="text-align: center;">for all issues of <i>The Voluntayist</i></h3>
+        <h3 style="text-align: center;">for all issues of <i>The Voluntaryist</i></h3>
         <p style="text-align: center;">All issues have been archived in PDF format. To access any particular one, click on its Issue Number.
         Carl Watner grants permission to reprint his own articles without special request.</p>
 
@@ -173,7 +174,11 @@ function djs_toc_top()
         <input id="ssw" name="sitesearch" type="radio" value="" /> WWW <input checked="checked" name="sitesearch" type="radio" value="http://voluntaryist.com" /> Voluntaryist.com</div>
         </form><form id="inum"><input id="nbtn" type="submit" value="Go To Issue" /><br />
         <input id="num" size="1" type="text" value="Iss #" /></form></header>
-        <div></div>
+        <div>$linkLine</div>
+        <strong>The Voluntaryist - 1982-1986: Reprint Volume 1, Whole Numbers 1 to 22.</strong><br/>
+        This volume contains facsimile copies of the first 22 issues of the newsletter
+        and includes a Person/Name Index for all issues from 1 to 181. Paperback, 204 pages.
+        $rPrice postpaid.<br/><br/>
         <script>
         free1 = new Image();
         free1.src = "http://www.voluntaryist.com/imgs/free1.jpg";
@@ -273,6 +278,20 @@ function custom_order_category( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'custom_order_category', 1 );
+
+function djs_rpwe_byLine($title, $id)
+{
+	$trace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,10);
+	if($trace[6]['function'] == 'rpwe_get_recent_posts'
+		|| $trace[5]['function'] == 'rpwe_get_recent_posts')
+	{
+		$cf = get_post_custom($id);
+		$byLine = $cf['byLine'][0];
+	}
+    return "$title $byLine";
+}
+
+add_filter('the_title','djs_rpwe_byLine');
 
 if($dave_is_testing)
 {

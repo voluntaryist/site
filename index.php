@@ -1,14 +1,14 @@
 <?php
-$useWP = ($_COOKIE['UseWP'] == 'set');
+$useWP = !($_COOKIE['UseWP'] == 'unset');
 if( $_GET['WP']=='1' )
 {
-    $h = isset($_GET['h']) ? $_GET['h'] : 1;
-    setCookie('UseWP','set',time()+($h*3600));
+    setCookie('UseWP','set');
     $useWP = true;
 }
 elseif( $_GET['WP']=='0' )
 {
-    setCookie('UseWP','unset');
+    $h = isset($_GET['h']) ? $_GET['h'] : 1;
+    setCookie('UseWP','unset',time()+($h*3600));
     $useWP = false;
 }
 

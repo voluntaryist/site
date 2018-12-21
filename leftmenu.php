@@ -25,6 +25,7 @@
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
 
+            <a href="/?WP=1" class=header>New WordPress Site</a><br />
             <a href="/espanol/index.html" class=header>Espa&#241;ol</a><br />
             <a href="/fundamentals/index.html" class=header>Fundamentals</a><br />
             <a href="/howibecame/index.html" class=header>How I Became a Voluntaryist</a><br />

@@ -20,6 +20,8 @@ return <<< EMAIL
 EMAIL;
 }
 
+function testpa2() { return "(Not Yet Imp.)"; }
+
 function priceAt2($price, $name='Payment', $return=false)
 {
     global $rateObj,$BTC_JSON_URL,$BTC_AVG_COM,$BTC_WINK;
@@ -27,7 +29,7 @@ function priceAt2($price, $name='Payment', $return=false)
     $rateFile = 'rates.ser';
     if(!isset($rateObj))
     {
-        if( ($fTime = @filemtime($rateFile)) && time() - $fTime > 1800 )
+        if( ($fTime = @filemtime($rateFile)) && time() - $fTime > 300 )
         {
             @unlink($rateFile);
         }
@@ -54,16 +56,15 @@ $ret =  "<!-- btc3: $btc,  -->";
     $inAuz = $rateObj->rateAu > 0 ? number_format($price/$rateObj->rateAu,5) : 'N/A';
     $inAu = $rateObj->rateAu > 0 ? number_format($price/$rateObj->rateAu*31.1034768,3) : 'N/A';
     $inBTC = $rateObj->rateBTC > 0 ? number_format($price/$rateObj->rateBTC,5) : 'N/A';
-    $pp1 = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=JGMXUNFVK7U94&lc=US";
+    $pp1 = "https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=UQCKYDNMPYF56&lc=US";
     $pp2 = "&currency_code=USD&button_subtype=products&add=1&bn=PP%2dShopCartBF%3abtn_cart_LG%2egif%3aNonHosted";
     $ret .= " <a href='$pp1&item_name=$name&amount=$price$pp2'
         title='Pay with Paypal'>$price.00 federal reserve notes</a>
-        (<select>
-        <option>Or Real Money...</option>
+        <select><option>Or Real Money...</option>
         <option>$inAr oz. of Silver</option>
         <option>$inAu grams of gold</option>
         <option>$inAuz troy oz. of gold</option>
-        <option>$inBTC bitcoins</option></select>)";
+        <option>$inBTC bitcoins</option></select>";
 
     if($return)
     {

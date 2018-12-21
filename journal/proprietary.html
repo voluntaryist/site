@@ -1,7 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
 <!-- Mirrored from www.voluntaryist.com/journal/yeareready.php by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 15 Oct 2010 17:17:08 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
-<head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" href="../voluntaryist.css" type="text/css">
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../voluntaryist.css" type="text/css">
+<title>Voluntaryist.com - Proprietary Theory of Justice</title>
 </head><body>
 <div style="position:absolute;left:0;top:0">
 <table align="center" width="100%" height="100%">
@@ -39,8 +41,8 @@
 <h4>by Carl Watner<br>1976</h4>
 </center>
 <div class='nav'>
-	Scan: <input type='text' id='pageIn' size='2'/>
-		<span id='prev'>Previous</span> | <span id='next'>Next</span></div><br/>
+    Scan: <input type='text' id='pageIn' size='2'/>
+        <span id='prev'>Previous</span> | <span id='next'>Next</span></div><br/>
 <img id='page' src='scans/scan001.jpg' height='750'/><br/>
 <img class='e' src='scans/scan002.jpg'/>
 <img class='e' src='scans/scan003.jpg'/>
@@ -69,35 +71,35 @@
 var page = 1;
 function showPage(p)
 {
-	if(p >= 1 && p < 24)
-	{
-		$('img#page').attr('src','scans/scan'+(""+(1000+p)).substr(-3)+".jpg");
-		page = p;
-	}
+    if(p >= 1 && p <= 24)
+    {
+        $('img#page').attr('src','scans/scan'+(""+(1000+p)).substr(-3)+".jpg");
+        page = p;
+    }
 }
 $(function(){
-	$('#pageIn').change(function()
-	{
-		showPage($('#pageIn').val());
-	});
-	$('#next').click(function()
-	{
-		if(page < 24)
-		{
-			showPage(page+1);
-		}
-	});
-	$('#prev').click(function()
-	{
-		if(page > 1)
-		{
-			showPage(page-1);
-		}
-	});
-	$('.e').hide();
-	$('.nav span').css('cursor','pointer');
+    $('#pageIn').change(function()
+    {
+        showPage($('#pageIn').val());
+    });
+    $('#next').click(function()
+    {
+        if(page < 24)
+        {
+            showPage(page+1);
+        }
+    });
+    $('#prev').click(function()
+    {
+        if(page > 1)
+        {
+            showPage(page-1);
+        }
+    });
+    $('.e').hide();
+    $('.nav span').css('cursor','pointer');
 });
 </script>
-	</div></td>
+    </div></td>
 </tr></table></td></tr></table></div>
 </body></html>
