@@ -509,6 +509,13 @@ $dated = array(
 		"To remain [a] spiritually free [people], [we] must live in truth. Living in truth means bearing public witness to the truth at all times and in all situations. The truth is unchanging. It cannot be destroyed by this or that decision or this or that law. The source of our captivity is that we allow lies to reign, that we do not denounce them, that we do not protest against their existence every day of our lives, that we do not confront lies with the truth but keep silent or pretend that we believe the lies. We live then in a state of hypocrisy. Courageous witness to the truth is the path that leads directly to freedom.[One] who bears witness to truth can be free, even though in a[n] [internment] camp or a prison. &hellip; [E]xternal or political freedom would come sooner or later as a consequence of freedom of spirit and fidelity to the truth.<br/>- Fr. Jerzy Popieluszko, Homily of October 31, 1982, in Judith Kelly, JUST CALL ME JERZY (2016), p. 79-80.",
 		"Violence is not a sign of strength but of weakness. Whoever fails to win over hearts and minds tries to conquer with violence. Every show of force is proof of moral inferiority. &hellip; An idea that needs weapons to survive will die on its own. An idea that can only maintain itself through violence is distorted. A living idea conquers by itself. Millions follow it spontaneously.<br/>- Fr. Jerzy Popieluszko, Mass for the Country [of Poland], December 26, 1982, in Judith Kelly, JUST CALL ME JERZY (2016), p. 55."
 		),
+	1440190113 => array(
+		"You can't do anything more than you can do, so everything starts with improving yourself.<br/> - Aaron Stokes in RATCHET AND WRENCH (Dec. 2018, p. 98)."
+		),
+    1440190221 => array(
+    	"If humans lived for the first three million years without a state, and most of them for the next 8,000 years without one, and the experiments with the nation-state as we know it are only a few hundred years old, there is clearly nothing eternal about it.<br/> - Kirkpatrick Sale, HUMAN SCALE REVISITED (2017), p. 324.",
+		"Many [most or all?] kingdoms and empires were in truth little more than large protection rackets. The king was the capo di tutti capi  who collected protection money, and in return made sure that neighbouring [sic] crime syndicates and local small fry did not harm those under his protection. He did little else.<br/> - Yuval Noah Harari, SAPIENS: A BRIEF HISTORY OF MANKIND (2015), p. 358."
+    	),
     );
 $quotes = $quotes_old;
 foreach($dated as $date)

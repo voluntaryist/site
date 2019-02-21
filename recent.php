@@ -29,6 +29,7 @@
     }
     krsort($byTime);
 // echo "<!-- ".print_r($byTime,true)." -->";
+    echo "<li><h3 class="rpwe-title"><a href="/table-contents-archives-10-years/#rbhs" title="Permalink to Reprint Volume 1." rel="bookmark">The Voluntaryist Reprint, Issues 1 - 22</a></h3></li>\n";
     $listed = 0;
     foreach($byTime as $f)
     {
