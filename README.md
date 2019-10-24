@@ -1,17 +1,13 @@
 # site
 voluntaryist.com website
 
-(9/25/2016, Dave) I altered index.php and .htaccess so that I can add an IP to the production site (in index.php) that will allow anyone to get the WP version of pages that have one (instead of the legacy version, which is the default).  There may be other changes in commit 376e9f1 required for this, but since it's really only useful in production, I wanted to let everyone know that if you want to watch the WP development, you can ask me to add your IP to the index file
-I also added some code to ds_custom and included that file at the end of wp_config (unversioned to protect sensitive data):
-```
-// Dave adds his customization file
-// --------------------------------
-require_once("ds_custom.php");
-```
+Commit [f2fe7fa](https://github.com/voluntaryist/site/commit/f2fe7faff6dcc9f248306a84eddcfaf34af3df3e#diff-828e0013b8f3bc1bb22b4f57172b019d) added a method for examining the legacy site:  Affixing ?WP=0 (adding WP set to 1 in the Querystring) will allow you to see the legacy version of the page you're on.
 
-The .htaccess shows that all .htm and .html files will be Mod-Rewritten to hit newlay.php which restructures them.
+## Cloning the site
+If you want to clone voluntaryist.com, that's fine. Obviously, you'll need your own domain name.  If you'd like a relativelty fresh copy of the database, please let me know (Dave).  We generally make a full backup of the site every three months.  I'll have to open it, scrub the passwords, and then send it to you.
 
-This is ugly in SourceTree because it won't wrap the long lines.  Suggestions?
+## History
+Below is some information about how this repo got started...
 
 Here is the meat of exchanges between Steve, Dooglio, and Dave, so you have some background:
 
