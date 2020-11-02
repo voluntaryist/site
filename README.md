@@ -4,7 +4,7 @@ voluntaryist.com website
 Commit [f2fe7fa](https://github.com/voluntaryist/site/commit/f2fe7faff6dcc9f248306a84eddcfaf34af3df3e#diff-828e0013b8f3bc1bb22b4f57172b019d) added a method for examining the legacy site:  Affixing ?WP=0 (adding WP set to 1 in the Querystring) will allow you to see the legacy version of the page you're on.
 
 ## Cloning the site
-If you want to clone voluntaryist.com, that's fine. Obviously, you'll need your own domain name.  If you'd like a relativelty fresh copy of the database, please let me know (Dave).  We generally make a full backup of the site every three months.  I'll have to open it, scrub the passwords, and then send it to you.
+If you want to clone voluntaryist.com, that's fine. Obviously, you'll need your own domain name.  If you'd like a relatively fresh copy of the database, please let me know (Dave).  We generally make a full backup of the site every three months.  I'll have to open it, scrub the passwords, and then send it to you.
 
 ## History
 Below is some information about how this repo got started...
